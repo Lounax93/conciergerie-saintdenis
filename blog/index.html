@@ -66,6 +66,28 @@
     .blog-section { padding:80px 24px 96px; }
     .container { max-width:960px; margin:0 auto; }
 
+    /* ARTICLES GRID */
+    .articles-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+    .article-card {
+      background:rgba(255,255,255,.72); backdrop-filter:blur(8px);
+      border:1px solid rgba(140,106,67,.18); border-radius:12px;
+      padding:0; text-decoration:none; color:inherit;
+      transition:transform .3s, border-color .3s; display:flex; flex-direction:column; overflow:hidden;
+    }
+    .article-card:hover { transform:translateY(-4px); border-color:rgba(140,106,67,.38); }
+    .card-thumb { height:160px; display:flex; align-items:flex-end; padding:20px; }
+    .card-thumb-label { font-family:'Sora',sans-serif; font-size:.62rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--bronze-glow); background:rgba(14,27,40,.8); padding:4px 12px; border-radius:4px; }
+    .card-body { padding:24px; flex:1; display:flex; flex-direction:column; }
+    .card-meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+    .card-tag { font-family:'Sora',sans-serif; font-size:.62rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--bronze); }
+    .card-date { font-size:.7rem; color:var(--steel); }
+    .card-title { font-family:'Sora',sans-serif; font-size:1.05rem; font-weight:700; color:var(--slate); line-height:1.35; margin-bottom:10px; }
+    .card-desc { font-size:.82rem; color:var(--text-m); line-height:1.7; margin-bottom:20px; flex:1; }
+    .card-link { font-family:'Sora',sans-serif; font-size:.75rem; font-weight:600; color:var(--bronze); display:inline-flex; align-items:center; gap:6px; transition:gap .2s; }
+    .card-link:hover { gap:10px; }
+    .card-link svg { width:14px; height:14px; }
+
+    /* COMING CARD */
     .coming-card {
       background:rgba(255,255,255,.75); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
       border:1px solid rgba(140,106,67,.2); border-radius:12px;
@@ -136,13 +158,42 @@
 <section class="blog-section vitrail-bg" style="background:var(--limestone)">
   <div class="container">
 
-    <div class="coming-card reveal">
-      <span class="coming-icon">93</span>
-      <h2>Articles à venir</h2>
-      <p>Nos experts préparent des analyses de marché et guides pratiques pour les propriétaires à Saint-Denis. Laissez votre email pour être notifié dès la publication.</p>
-      <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-bronze">Estimer mes revenus en attendant →</a>
+    <!-- Articles -->
+    <div class="articles-grid">
+
+      <a href="/blog/combien-rapporte-airbnb-saint-denis" class="article-card reveal">
+        <div class="card-thumb" style="background:linear-gradient(135deg,#0E1B28 0%,#1B2A3A 50%,#0E1B28 100%);">
+          <span class="card-thumb-label">Revenus · Saint-Denis</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-tag">Revenus · Saint-Denis</span>
+            <span class="card-date">Juin 2026</span>
+          </div>
+          <div class="card-title">Combien rapporte un Airbnb à Saint-Denis en 2026 ?</div>
+          <p class="card-desc">Revenus réels studio/T2/T3, quartiers porteurs, impact Stade de France et Grand Paris Express — toutes les données du marché.</p>
+          <span class="card-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/blog/stade-france-airbnb-saint-denis" class="article-card reveal d1">
+        <div class="card-thumb" style="background:linear-gradient(135deg,#1a0e00 0%,#2a1a08 50%,#1a0e00 100%);">
+          <span class="card-thumb-label">Stratégie · Stade de France</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-tag">Stratégie · Saint-Denis</span>
+            <span class="card-date">Juin 2026</span>
+          </div>
+          <div class="card-title">Stade de France et Airbnb : optimiser vos soirs de match</div>
+          <p class="card-desc">Concerts, football, rugby — comment adapter vos tarifs et maximiser vos revenus lors des 80+ événements annuels du Stade de France.</p>
+          <span class="card-link">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </a>
+
     </div>
 
+    <!-- Upcoming topics -->
     <div class="topics-grid">
       <div class="topic-card reveal">
         <div class="topic-tag">Analyse de marché</div>

@@ -10,5 +10,9 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/combien-rapporte-airbnb-saint-denis", "destination": "/blog/combien-rapporte-airbnb-saint-denis", "permanent": true },
+    { "source": "/stade-france-airbnb-saint-denis", "destination": "/blog/stade-france-airbnb-saint-denis", "permanent": true }
   ]
 }
