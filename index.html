@@ -1,352 +1,598 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL60XQ455W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YL60XQ455W');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YL60XQ455W');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Conciergerie Airbnb Saint-Denis | Hostopia — Gestion locative Saint-Denis</title>
-  <meta name="description" content="Conciergerie Airbnb à Saint-Denis (93) — Hostopia gère votre bien près du Stade de France. Événements sportifs, gestion 100% déléguée, revenus maximisés.">
-  <meta name="robots" content="index, follow">
+  <title>Conciergerie Airbnb Saint-Denis | Gestion locative Grand Paris</title>
+  <meta name="description" content="Conciergerie Airbnb premium à Saint-Denis. À 10 minutes de Paris, Stade de France & Basilique. Doublez vos revenus locatifs. Gestion 100% déléguée.">
   <link rel="canonical" href="https://conciergeriesaintdenis.fr/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://conciergeriesaintdenis.fr/">
-  <meta property="og:title" content="Conciergerie Airbnb Saint-Denis | Hostopia">
-  <meta property="og:description" content="Conciergerie Airbnb à Saint-Denis (93) — Hostopia gère votre bien près du Stade de France. Événements sportifs, gestion 100% déléguée, revenus maximisés.">
-  <meta property="og:image" content="https://conciergeriesaintdenis.fr/assets/og-image.jpg">
-  <meta property="og:locale" content="fr_FR">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Conciergerie Airbnb Saint-Denis | Hostopia">
-  <meta name="twitter:description" content="Conciergerie Airbnb à Saint-Denis (93) — Hostopia gère votre bien près du Stade de France. Événements sportifs, gestion 100% déléguée, revenus maximisés.">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/base.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Hostopia Conciergerie Saint-Denis",
-    "description": "Conciergerie Airbnb à Saint-Denis (93), Seine-Saint-Denis. Gestion locative courte durée près du Stade de France.",
-    "url": "https://conciergeriesaintdenis.fr",
-    "telephone": "+33767209266",
-    "email": "contact@hostopia.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Saint-Denis",
-      "addressLocality": "Saint-Denis",
-      "postalCode": "93200",
-      "addressRegion": "Seine-Saint-Denis",
-      "addressCountry": "FR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 48.9362,
-      "longitude": 2.3574
-    },
-    "areaServed": ["Saint-Denis", "Saint-Ouen", "Stade de France", "Aubervilliers", "Paris"],
-    "priceRange": "€€",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "08:00",
-      "closes": "20:00"
-    },
-    "sameAs": ["https://hostopia.fr"]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; font-weight: 300; color: #121212; background: #F2EFE8; overflow-x: hidden; }
+
+    :root {
+      --limestone:   #F2EFE8;
+      --limestone-b: #FAFAF7;
+      --slate:       #263547;
+      --slate-deep:  #1B2A3A;
+      --slate-night: #0E1B28;
+      --bronze:      #8C6A43;
+      --bronze-dark: #6E5232;
+      --bronze-glow: #B8926A;
+      --steel:       #7B8694;
+      --canal:       #406A85;
+      --text:        #121212;
+      --text-m:      #4A4A55;
+    }
+
+    h1, h2, h3, .display { font-family: 'Sora', sans-serif; letter-spacing: -0.02em; }
+
+    /* ── VITRAIL PATTERN ── */
+    .vitrail-bg { position: relative; }
+    .vitrail-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%238C6A43' stroke-width='0.5'%3E%3Cpolygon points='36,4 68,20 68,52 36,68 4,52 4,20' opacity='0.5'/%3E%3Cpolygon points='36,16 56,26 56,46 36,56 16,46 16,26' opacity='0.35'/%3E%3Cline x1='36' y1='4' x2='36' y2='68' opacity='0.3'/%3E%3Cline x1='4' y1='36' x2='68' y2='36' opacity='0.3'/%3E%3Cline x1='4' y1='20' x2='68' y2='52' opacity='0.2'/%3E%3Cline x1='68' y1='20' x2='4' y2='52' opacity='0.2'/%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.028;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .vitrail-bg > * { position: relative; z-index: 1; }
+
+    /* ── INDUSTRIAL GRID ── */
+    .grid-bg { position: relative; }
+    .grid-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(123,134,148,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123,134,148,0.08) 1px, transparent 1px);
+      background-size: 64px 64px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .grid-bg > * { position: relative; z-index: 1; }
+
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .65s cubic-bezier(.22,1,.36,1), transform .65s cubic-bezier(.22,1,.36,1); }
+    .reveal.visible { opacity: 1; transform: none; }
+    .d1 { transition-delay: .08s; }
+    .d2 { transition-delay: .16s; }
+    .d3 { transition-delay: .24s; }
+    .d4 { transition-delay: .32s; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: var(--slate);
+      padding: 0 48px;
+      height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(140,106,67,.2);
+    }
+    .nav-logo { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1rem; color: #fff; text-decoration: none; letter-spacing: 0.02em; }
+    .nav-logo em { color: var(--bronze); font-style: normal; }
+    .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+    .nav-links a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .84rem; font-weight: 400; letter-spacing: .04em; transition: color .2s; }
+    .nav-links a:hover { color: var(--bronze-glow); }
+    .nav-cta { background: var(--bronze) !important; color: #fff !important; padding: 9px 22px; border-radius: 6px; font-weight: 600 !important; font-family: 'Sora', sans-serif; transition: background .2s !important; }
+    .nav-cta:hover { background: var(--bronze-dark) !important; }
+
+    /* ── WHATSAPP ── */
+    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: #fff; width: 56px; height: 56px; border-radius: 28px; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,.4); transition: transform .25s, width .3s, padding .3s; overflow: hidden; white-space: nowrap; }
+    .wa-float svg { width: 26px; height: 26px; flex-shrink: 0; }
+    .wa-label { display: none; font-size: .82rem; font-weight: 500; margin-left: 10px; margin-right: 4px; font-family: 'Inter', sans-serif; }
+    .wa-float:hover { transform: scale(1.04); width: auto; padding: 0 18px 0 14px; }
+    .wa-float:hover .wa-label { display: inline; }
+
+    /* ── HERO ── */
     .hero {
-      min-height: 100vh;
-      background: var(--noir);
-      display: flex;
-      align-items: center;
-      padding-top: 80px;
-      position: relative;
-      overflow: hidden;
+      height: 100vh; min-height: 680px;
+      background: var(--slate-deep);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 64px 24px 0;
+      text-align: center; position: relative; overflow: hidden;
     }
-    .hero .orb-1 { width:600px;height:600px;top:-100px;right:-100px; }
-    .hero .orb-2 { width:400px;height:400px;bottom:-50px;left:-80px; }
-    .hero .orb-3 { width:300px;height:300px;top:40%;left:40%; }
-    .hero-content { position:relative;z-index:1;max-width:780px; }
-    .hero-badge { margin-bottom:28px; }
-    .hero h1 { color:var(--blanc);margin-bottom:24px; }
-    .hero h1 span { background:linear-gradient(135deg,var(--teal-light),var(--orange-warm));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent; }
-    .hero-sub { font-size:clamp(17px,2vw,20px);color:rgba(255,255,255,0.65);max-width:52ch;margin-bottom:0;font-weight:400; }
-    .hero-bottom { margin-top:72px;display:flex;gap:48px;flex-wrap:wrap; }
-    .hero-stat { display:flex;flex-direction:column;gap:4px; }
-    .hero-stat small { font-size:13px;color:rgba(255,255,255,0.45);font-weight:500;text-transform:uppercase;letter-spacing:0.06em; }
-    .hero-stat .stat-number { font-size:2.5rem; }
-    .zone-inner-grid { display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center; }
-    .cta-section { background:var(--cream);padding:80px 0;text-align:center; }
-    .cta-card { display:inline-flex;flex-direction:column;align-items:center;gap:24px;padding:56px 64px;max-width:640px;width:100%;background:var(--blanc);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);position:relative;overflow:hidden; }
-    .cta-card::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--orange)); }
-    .cta-card h2 { font-size:clamp(1.5rem,3vw,2rem); }
-    .cta-card p { color:var(--grey-600);font-size:17px;text-align:center; }
-    .btn-cta-main { padding:18px 40px;font-size:17px;border-radius:var(--radius-xl);background:linear-gradient(135deg,var(--teal) 0%,var(--orange) 100%);color:var(--blanc);font-weight:700;box-shadow:0 6px 28px rgba(107,168,160,0.4);transition:var(--transition);display:inline-flex;align-items:center;gap:10px; }
-    .btn-cta-main:hover { transform:translateY(-3px) scale(1.02);box-shadow:0 12px 40px rgba(107,168,160,0.5); }
-    .cta-note { font-size:13px;color:var(--grey-400); }
-    .benefits-section { background:var(--blanc); }
-    .benefits-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:28px; }
-    .benefit-card { padding:40px 36px; }
-    .benefit-card .icon-wrap { margin-bottom:24px; }
-    .benefit-card h3 { font-size:1.3rem;margin-bottom:12px; }
-    .benefit-card p { color:var(--grey-600);font-size:15px;line-height:1.7; }
-    .benefit-card .benefit-highlight { margin-top:20px;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:0.04em; }
-    .trust-strip { background:var(--noir-soft);padding:40px 0;overflow:hidden; }
-    .trust-inner { display:flex;align-items:center;gap:48px;justify-content:center;flex-wrap:wrap; }
-    .trust-item { display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.55);font-size:15px;white-space:nowrap; }
-    .trust-item svg { color:var(--teal);flex-shrink:0; }
-    .blog-section { background:var(--grey-100); }
-    .blog-coming-soon { border:2px dashed var(--grey-200);border-radius:var(--radius-xl);padding:64px 40px;text-align:center;background:rgba(255,255,255,0.6); }
-    .blog-topics { display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px; }
-    .topic-pill { padding:8px 18px;background:rgba(107,168,160,0.08);border:1px solid rgba(107,168,160,0.2);border-radius:100px;font-size:14px;font-weight:500;color:var(--teal-dark); }
-    @media (max-width:900px) {
-      .benefits-grid { grid-template-columns:1fr;gap:20px; }
-      .zone-inner-grid { grid-template-columns:1fr;gap:40px; }
-      .trust-inner { gap:16px 20px; }
-      .btn-cta-main { width:100%;justify-content:center;font-size:15px;padding:15px 24px; }
+    .hero-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(140,106,67,.14); border: 1px solid rgba(140,106,67,.4);
+      color: var(--bronze-glow); font-size: .73rem; letter-spacing: .16em; text-transform: uppercase;
+      padding: 7px 18px; border-radius: 4px; margin-bottom: 32px;
     }
-    @media (max-width:768px) {
-      .hero-bottom { gap:24px; }
-      .hero-stat .stat-number { font-size:2rem; }
+    .hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--bronze); border-radius: 50%; }
+    .hero h1 {
+      font-family: 'Sora', sans-serif; font-size: clamp(2.8rem, 6.5vw, 5.8rem);
+      font-weight: 800; line-height: 1.05; color: #fff; max-width: 860px; margin-bottom: 24px;
+      letter-spacing: -0.03em;
     }
-    @media (max-width:600px) {
-      .cta-card { padding:40px 28px; }
+    .hero h1 .accent { color: var(--bronze); }
+    .hero-tagline { font-size: 1rem; color: rgba(255,255,255,.62); max-width: 540px; line-height: 1.75; margin-bottom: 44px; font-weight: 300; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+    .btn-bronze { background: var(--bronze); color: #fff; text-decoration: none; padding: 15px 36px; font-family: 'Sora', sans-serif; font-size: .88rem; font-weight: 600; letter-spacing: .04em; border-radius: 6px; transition: background .25s, transform .2s; display: inline-block; }
+    .btn-bronze:hover { background: var(--bronze-dark); transform: translateY(-2px); }
+    .btn-ghost { background: transparent; color: rgba(255,255,255,.82); text-decoration: none; padding: 14px 34px; font-size: .88rem; font-weight: 400; border: 1px solid rgba(255,255,255,.28); border-radius: 6px; transition: border-color .25s, color .25s; display: inline-block; }
+    .btn-ghost:hover { border-color: rgba(255,255,255,.65); color: #fff; }
+
+    /* ── GOTHIC SEPARATOR (pointed arch) ── */
+    .gothic-sep { display: block; width: 100%; line-height: 0; }
+
+    /* ── STATS BAR ── */
+    .stats-bar { background: var(--slate); padding: 56px 24px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); max-width: 1000px; margin: 0 auto; }
+    .stat-col { text-align: center; padding: 8px 24px; border-left: 1px solid rgba(140,106,67,.25); position: relative; }
+    .stat-col:first-child { border-left: none; }
+    /* Vertical gothic pillar accent */
+    .stat-col::after { content: ''; position: absolute; top: -24px; bottom: -24px; right: -0.5px; width: 1px; background: linear-gradient(to bottom, transparent, rgba(140,106,67,.3), transparent); }
+    .stat-col:last-child::after { display: none; }
+    .stat-num { font-family: 'Sora', sans-serif; font-size: clamp(2.6rem,4vw,3.6rem); font-weight: 800; color: var(--bronze); line-height: 1; display: block; margin-bottom: 10px; letter-spacing: -.03em; }
+    .stat-lbl { font-size: .72rem; color: rgba(255,255,255,.55); text-transform: uppercase; letter-spacing: .11em; line-height: 1.5; }
+
+    /* ── TRUST STRIP ── */
+    .trust-strip { background: var(--limestone); padding: 28px 24px; border-bottom: 1px solid rgba(140,106,67,.12); }
+    .trust-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 44px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; font-size: .8rem; color: var(--text-m); letter-spacing: .04em; }
+    .trust-dot { width: 5px; height: 5px; background: var(--bronze); border-radius: 50%; flex-shrink: 0; }
+
+    /* ── BENEFITS ── */
+    .benefits { background: var(--limestone-b); padding: 96px 24px; }
+    .sec-label { font-family: 'Sora', sans-serif; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--bronze); margin-bottom: 14px; }
+    .sec-title { font-family: 'Sora', sans-serif; font-size: clamp(1.9rem,3.2vw,2.9rem); font-weight: 700; color: var(--text); line-height: 1.15; margin-bottom: 56px; max-width: 600px; }
+    .benefit-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
+    .benefit-card {
+      background: rgba(255,255,255,0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(140,106,67,.18); border-radius: 12px;
+      padding: 0 28px 32px; overflow: hidden;
+      transition: box-shadow .3s, transform .25s, border-color .25s;
+    }
+    .benefit-card:hover { box-shadow: 0 16px 48px rgba(38,53,71,.12); transform: translateY(-4px); border-color: rgba(140,106,67,.4); }
+    .card-arch-svg { width: 100%; height: 52px; margin-bottom: 20px; }
+    .benefit-card h3 { font-family: 'Sora', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--slate); margin-bottom: 12px; }
+    .benefit-card p { font-size: .87rem; color: var(--text-m); line-height: 1.8; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: var(--slate); padding: 96px 24px; }
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; max-width: 1000px; margin: 0 auto; }
+    .testi-card {
+      background: rgba(255,255,255,.04); border: 1px solid rgba(140,106,67,.18);
+      border-radius: 12px; padding: 32px 26px; position: relative; overflow: hidden;
+      transition: border-color .3s, background .3s;
+    }
+    .testi-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: var(--bronze); transform: scaleX(0); transition: transform .4s;
+    }
+    .testi-card:hover::before { transform: scaleX(1); }
+    .testi-card:hover { border-color: rgba(140,106,67,.4); background: rgba(255,255,255,.07); }
+    .testi-stars { color: var(--bronze); font-size: .85rem; letter-spacing: 2px; margin-bottom: 16px; }
+    .testi-quote { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 300; color: rgba(255,255,255,.88); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+    .testi-author { font-size: .76rem; color: rgba(255,255,255,.45); font-weight: 500; letter-spacing: .04em; }
+    .testi-author strong { color: var(--bronze-glow); font-weight: 600; }
+
+    /* ── ZONE ── */
+    .zone-sec { background: var(--limestone); padding: 88px 24px; }
+    .zone-inner { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .zone-text h2 { font-family: 'Sora', sans-serif; font-size: clamp(1.8rem,2.8vw,2.5rem); font-weight: 700; color: var(--slate); margin-bottom: 16px; line-height: 1.2; }
+    .zone-text h2 em { color: var(--bronze); font-style: normal; }
+    .zone-text p { font-size: .9rem; color: var(--text-m); line-height: 1.8; margin-bottom: 24px; }
+    .zone-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { background: rgba(140,106,67,.1); border: 1px solid rgba(140,106,67,.3); color: var(--bronze); font-size: .75rem; font-weight: 600; font-family: 'Sora', sans-serif; letter-spacing: .07em; padding: 6px 14px; border-radius: 4px; }
+    .zone-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .zone-stat { background: var(--slate); padding: 26px 20px; border-radius: 10px; text-align: center; border: 1px solid rgba(140,106,67,.12); }
+    .zone-num { font-family: 'Sora', sans-serif; font-size: 2.4rem; font-weight: 800; color: var(--bronze); display: block; line-height: 1; margin-bottom: 6px; }
+    .zone-label { font-size: .69rem; color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: .1em; }
+
+    /* ── CTA FINAL ── */
+    .cta-final {
+      background: linear-gradient(135deg, var(--slate-deep) 0%, #1E2D3C 40%, #3B2300 100%);
+      padding: 112px 24px; text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-final::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 110%, rgba(140,106,67,.22) 0%, transparent 55%); pointer-events: none; }
+    .cta-final h2 { font-family: 'Sora', sans-serif; font-size: clamp(2.2rem,4.5vw,4rem); font-weight: 800; color: #fff; max-width: 680px; margin: 0 auto 16px; line-height: 1.1; letter-spacing: -.03em; }
+    .cta-final h2 em { color: var(--bronze); font-style: normal; }
+    .cta-final p { color: rgba(255,255,255,.58); font-size: .94rem; margin-bottom: 44px; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--slate-night); padding: 48px 24px; text-align: center; border-top: 1px solid rgba(140,106,67,.1); }
+    .footer-logo { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1rem; color: rgba(255,255,255,.45); margin-bottom: 16px; }
+    .footer-logo em { color: var(--bronze); font-style: normal; }
+    .footer-links { display: flex; gap: 28px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,.3); text-decoration: none; font-size: .78rem; letter-spacing: .05em; transition: color .2s; }
+    .footer-links a:hover { color: rgba(255,255,255,.7); }
+    .footer-copy { font-size: .7rem; color: rgba(255,255,255,.18); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 880px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .stat-col:nth-child(3) { border-left: none; }
+      .benefit-cards, .testi-grid { grid-template-columns: 1fr; }
+      .zone-inner { grid-template-columns: 1fr; gap: 44px; }
     }
   </style>
 </head>
 <body>
 
-  <header class="site-header" id="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="/"><img src="assets/logo-blanc.png" alt="Hostopia" class="header-logo"></a>
-        <nav class="header-nav" aria-label="Navigation principale">
-          <a href="/">Accueil</a>
-          <a href="qui-sommes-nous.html">Qui sommes-nous</a>
-          <a href="/blog">Blog</a>
-        </nav>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary header-cta" target="_blank" rel="noopener">Prendre RDV</a>
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Conciergerie <em>Saint-Denis</em></a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- SVG: Gothic architecture + industrial skyline -->
+  <svg class="hero-svg" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs>
+      <!-- Industrial grid pattern -->
+      <pattern id="grid" x="0" y="0" width="72" height="72" patternUnits="userSpaceOnUse">
+        <path d="M72,0 L0,0 L0,72" fill="none" stroke="#7B8694" stroke-width="0.4"/>
+      </pattern>
+      <!-- Vitrail diamond pattern -->
+      <pattern id="vitrail" x="0" y="0" width="56" height="56" patternUnits="userSpaceOnUse">
+        <polygon points="28,4 52,28 28,52 4,28" fill="none" stroke="#8C6A43" stroke-width="0.5"/>
+        <polygon points="28,12 44,28 28,44 12,28" fill="none" stroke="#8C6A43" stroke-width="0.3"/>
+      </pattern>
+    </defs>
+
+    <!-- Industrial grid (very subtle background) -->
+    <rect width="1440" height="800" fill="url(#grid)" opacity="0.04"/>
+
+    <!-- LEFT GOTHIC PILLAR -->
+    <!-- Main pillar shaft -->
+    <rect x="60" y="0" width="16" height="680" fill="#263547" stroke="#8C6A43" stroke-width="0.8" opacity="0.7"/>
+    <!-- Pillar decorative lines (buttresses) -->
+    <line x1="50" y1="0" x2="50" y2="660" stroke="#8C6A43" stroke-width="0.5" opacity="0.25"/>
+    <line x1="84" y1="0" x2="84" y2="660" stroke="#8C6A43" stroke-width="0.4" opacity="0.2"/>
+    <line x1="100" y1="0" x2="100" y2="640" stroke="#8C6A43" stroke-width="0.3" opacity="0.14"/>
+    <line x1="116" y1="80" x2="116" y2="620" stroke="#8C6A43" stroke-width="0.3" opacity="0.1"/>
+    <!-- Pillar capital (top ornament) -->
+    <circle cx="68" cy="12" r="8" fill="none" stroke="#8C6A43" stroke-width="0.8" opacity="0.55"/>
+    <circle cx="68" cy="12" r="3" fill="#8C6A43" opacity="0.4"/>
+    <!-- Horizontal band marks on pillar -->
+    <rect x="56" y="200" width="24" height="2" fill="#8C6A43" opacity="0.25"/>
+    <rect x="56" y="400" width="24" height="2" fill="#8C6A43" opacity="0.25"/>
+
+    <!-- RIGHT GOTHIC PILLAR (mirrored) -->
+    <rect x="1364" y="0" width="16" height="680" fill="#263547" stroke="#8C6A43" stroke-width="0.8" opacity="0.7"/>
+    <line x1="1390" y1="0" x2="1390" y2="660" stroke="#8C6A43" stroke-width="0.5" opacity="0.25"/>
+    <line x1="1356" y1="0" x2="1356" y2="660" stroke="#8C6A43" stroke-width="0.4" opacity="0.2"/>
+    <line x1="1340" y1="0" x2="1340" y2="640" stroke="#8C6A43" stroke-width="0.3" opacity="0.14"/>
+    <line x1="1324" y1="80" x2="1324" y2="620" stroke="#8C6A43" stroke-width="0.3" opacity="0.1"/>
+    <circle cx="1372" cy="12" r="8" fill="none" stroke="#8C6A43" stroke-width="0.8" opacity="0.55"/>
+    <circle cx="1372" cy="12" r="3" fill="#8C6A43" opacity="0.4"/>
+    <rect x="1360" y="200" width="24" height="2" fill="#8C6A43" opacity="0.25"/>
+    <rect x="1360" y="400" width="24" height="2" fill="#8C6A43" opacity="0.25"/>
+
+    <!-- MAIN POINTED GOTHIC ARCH (outer) -->
+    <path d="M68,720 Q68,200 720,40 Q1372,200 1372,720"
+          fill="none" stroke="#8C6A43" stroke-width="1.4" opacity="0.4"/>
+    <!-- Inner pointed arch (second layer) -->
+    <path d="M120,720 Q120,240 720,90 Q1320,240 1320,720"
+          fill="none" stroke="#8C6A43" stroke-width="0.8" opacity="0.22"/>
+    <!-- Third arch (innermost tracery) -->
+    <path d="M200,720 Q200,300 720,150 Q1240,300 1240,720"
+          fill="none" stroke="#8C6A43" stroke-width="0.5" opacity="0.12"/>
+
+    <!-- VITRAIL PATTERN in arch zone (center-top area) -->
+    <clipPath id="archClip">
+      <path d="M68,720 Q68,200 720,40 Q1372,200 1372,720 Z"/>
+    </clipPath>
+    <rect width="1440" height="800" fill="url(#vitrail)" opacity="0.035" clip-path="url(#archClip)"/>
+
+    <!-- Rose window (center, top) — simplified geometric tracery -->
+    <g transform="translate(720, 200)" opacity="0.07">
+      <circle cx="0" cy="0" r="60" fill="none" stroke="#8C6A43" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="40" fill="none" stroke="#8C6A43" stroke-width="0.6"/>
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#8C6A43" stroke-width="0.5"/>
+      <!-- Radiating spokes every 30deg -->
+      <line x1="0" y1="-60" x2="0" y2="60" stroke="#8C6A43" stroke-width="0.4"/>
+      <line x1="-60" y1="0" x2="60" y2="0" stroke="#8C6A43" stroke-width="0.4"/>
+      <line x1="-52" y1="-30" x2="52" y2="30" stroke="#8C6A43" stroke-width="0.3"/>
+      <line x1="52" y1="-30" x2="-52" y2="30" stroke="#8C6A43" stroke-width="0.3"/>
+      <line x1="-30" y1="-52" x2="30" y2="52" stroke="#8C6A43" stroke-width="0.3"/>
+      <line x1="30" y1="-52" x2="-30" y2="52" stroke="#8C6A43" stroke-width="0.3"/>
+      <!-- Outer petal shapes -->
+      <circle cx="0" cy="-50" r="9" fill="none" stroke="#8C6A43" stroke-width="0.4"/>
+      <circle cx="43" cy="-25" r="9" fill="none" stroke="#8C6A43" stroke-width="0.4"/>
+      <circle cx="43" cy="25" r="9" fill="none" stroke="#8C6A43" stroke-width="0.4"/>
+      <circle cx="0" cy="50" r="9" fill="none" stroke="#8C6A43" stroke-width="0.4"/>
+      <circle cx="-43" cy="25" r="9" fill="none" stroke="#8C6A43" stroke-width="0.4"/>
+      <circle cx="-43" cy="-25" r="9" fill="none" stroke="#8C6A43" stroke-width="0.4"/>
+    </g>
+
+    <!-- URBAN SKYLINE — Saint-Denis Pleyel (bottom) -->
+    <!-- Modern towers -->
+    <g opacity="0.22" fill="#263547" stroke="#8C6A43" stroke-width="0.5">
+      <!-- Background haze -->
+      <rect x="0" y="680" width="1440" height="120" fill="#1B2A3A" stroke="none" opacity="0.6"/>
+
+      <!-- Pleyel tower cluster (center-left) -->
+      <rect x="480" y="560" width="28" height="240"/>       <!-- tall tower 1 -->
+      <rect x="514" y="590" width="22" height="210"/>       <!-- tall tower 2 -->
+      <rect x="540" y="610" width="18" height="190"/>       <!-- mid tower -->
+      <rect x="562" y="580" width="32" height="220"/>       <!-- tall tower 3 (Pleyel main) -->
+      <rect x="598" y="620" width="16" height="180"/>
+      <rect x="618" y="640" width="24" height="160"/>
+
+      <!-- Left buildings -->
+      <rect x="180" y="640" width="40" height="160"/>
+      <rect x="224" y="652" width="28" height="148"/>
+      <rect x="256" y="625" width="20" height="175"/>
+      <rect x="280" y="648" width="36" height="152"/>
+      <rect x="320" y="660" width="24" height="140"/>
+      <rect x="348" y="635" width="30" height="165"/>
+      <rect x="382" y="650" width="22" height="150"/>
+      <rect x="408" y="638" width="28" height="162"/>
+      <rect x="440" y="655" width="20" height="145"/>
+
+      <!-- Right buildings -->
+      <rect x="660" y="638" width="30" height="162"/>
+      <rect x="694" y="652" width="22" height="148"/>
+      <rect x="720" y="625" width="36" height="175"/>
+      <rect x="760" y="648" width="24" height="152"/>
+      <rect x="788" y="612" width="28" height="188"/>        <!-- taller cluster right -->
+      <rect x="820" y="598" width="20" height="202"/>
+      <rect x="844" y="618" width="32" height="182"/>
+      <rect x="880" y="640" width="26" height="160"/>
+      <rect x="910" y="655" width="18" height="145"/>
+      <rect x="932" y="632" width="30" height="168"/>
+      <rect x="966" y="648" width="22" height="152"/>
+      <rect x="992" y="658" width="28" height="142"/>
+      <rect x="1024" y="642" width="20" height="158"/>
+      <rect x="1048" y="662" width="24" height="138"/>
+      <rect x="1076" y="645" width="18" height="155"/>
+      <rect x="1098" y="658" width="26" height="142"/>
+      <rect x="1128" y="665" width="20" height="135"/>
+
+      <!-- Window grids on towers (dots representing lit windows) -->
+    </g>
+
+    <!-- Skyline glow at bottom (ground light effect) -->
+    <defs>
+      <linearGradient id="skyGlow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#8C6A43" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#8C6A43" stop-opacity="0.06"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="600" width="1440" height="200" fill="url(#skyGlow)"/>
+
+    <!-- Bronze horizontal accent lines (industrial rails) -->
+    <line x1="0" y1="680" x2="1440" y2="680" stroke="#8C6A43" stroke-width="1" opacity="0.18"/>
+    <line x1="0" y1="686" x2="1440" y2="686" stroke="#8C6A43" stroke-width="0.4" opacity="0.1"/>
+  </svg>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-badge">Conciergerie Airbnb Premium · Saint-Denis, 93</div>
+
+  <h1 class="reveal">
+    Vous êtes propriétaire à <span class="accent">Saint-Denis</span><br>
+    et souhaitez faire du Airbnb&nbsp;?
+  </h1>
+
+  <p class="hero-tagline reveal d1">
+    À 10 minutes de Paris, Saint-Denis est en pleine transformation. Stade de France, Basilique, Pleyel — votre bien est au cœur d'un marché qui explose.
+  </p>
+
+  <div class="hero-ctas reveal d2">
+    <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-bronze">Estimer mes revenus →</a>
+    <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-ghost" target="_blank" rel="noopener">Prendre rendez-vous</a>
+  </div>
+</section>
+
+<!-- GOTHIC POINTED SEPARATOR (hero → stats) -->
+<svg class="gothic-sep" style="background:var(--slate-deep)" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,0 L0,56 L590,56 L720,8 L850,56 L1440,56 L1440,0 Z" fill="#263547"/>
+</svg>
+
+<!-- STATS BAR -->
+<section class="stats-bar vitrail-bg">
+  <div class="stats-grid">
+    <div class="stat-col reveal">
+      <span class="stat-num">3×</span>
+      <span class="stat-lbl">Plus de revenus<br>vs location classique</span>
+    </div>
+    <div class="stat-col reveal d1">
+      <span class="stat-num">20+</span>
+      <span class="stat-lbl">Logements gérés<br>en Île-de-France</span>
+    </div>
+    <div class="stat-col reveal d2">
+      <span class="stat-num">100%</span>
+      <span class="stat-lbl">Gestion déléguée<br>en Île-de-France</span>
+    </div>
+    <div class="stat-col reveal d3">
+      <span class="stat-num">15h</span>
+      <span class="stat-lbl">Économisées<br>par semaine</span>
+    </div>
+  </div>
+</section>
+
+<!-- POINTED SEPARATOR (stats → trust) -->
+<svg class="gothic-sep" style="background:var(--limestone)" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,56 L0,0 L590,0 L720,48 L850,0 L1440,0 L1440,56 Z" fill="#263547"/>
+</svg>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-dot"></span>Spécialistes Stade de France & Pleyel</div>
+    <div class="trust-item"><span class="trust-dot"></span>Tarification dynamique Grand Paris</div>
+    <div class="trust-item"><span class="trust-dot"></span>Accueil 7j/7 en votre nom</div>
+    <div class="trust-item"><span class="trust-dot"></span>Ménage & linge hôtelier inclus</div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits grid-bg" id="benefits">
+  <div style="max-width:1000px;margin:0 auto;text-align:center">
+    <p class="sec-label reveal">Ce que vous gagnez</p>
+    <h2 class="sec-title reveal d1" style="margin:0 auto 56px">En nous confiant<br>votre bien à Saint-Denis</h2>
+  </div>
+  <div class="benefit-cards">
+    <div class="benefit-card reveal">
+      <!-- Gothic pointed arch card header -->
+      <svg class="card-arch-svg" viewBox="0 0 280 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40,52 L40,30 Q140,2 240,30 L240,52" fill="none" stroke="#8C6A43" stroke-width="1.2" opacity="0.55"/>
+        <line x1="140" y1="2" x2="140" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.22"/>
+        <circle cx="140" cy="2" r="4" fill="#8C6A43" opacity="0.45"/>
+        <line x1="0" y1="52" x2="40" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.2"/>
+        <line x1="240" y1="52" x2="280" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.2"/>
+        <!-- Inner tracery -->
+        <path d="M80,52 Q110,28 140,18 Q170,28 200,52" fill="none" stroke="#8C6A43" stroke-width="0.5" opacity="0.18"/>
+      </svg>
+      <h3>Revenus optimisés</h3>
+      <p>Nos algorithmes de tarification dynamique s'adaptent aux événements du Stade de France, aux concerts, aux congrès de La Plaine et aux pics de demande touristique pour maximiser chaque nuit.</p>
+    </div>
+    <div class="benefit-card reveal d1">
+      <svg class="card-arch-svg" viewBox="0 0 280 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40,52 L40,30 Q140,2 240,30 L240,52" fill="none" stroke="#8C6A43" stroke-width="1.2" opacity="0.55"/>
+        <line x1="140" y1="2" x2="140" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.22"/>
+        <circle cx="140" cy="2" r="4" fill="#8C6A43" opacity="0.45"/>
+        <line x1="0" y1="52" x2="40" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.2"/>
+        <line x1="240" y1="52" x2="280" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.2"/>
+        <path d="M80,52 Q110,28 140,18 Q170,28 200,52" fill="none" stroke="#8C6A43" stroke-width="0.5" opacity="0.18"/>
+      </svg>
+      <h3>Gestion 100% déléguée</h3>
+      <p>Check-in autonome, communication voyageurs 24h/24, ménage professionnel, gestion des incidents — nous prenons tout en charge. Vous recevez votre virement chaque mois.</p>
+    </div>
+    <div class="benefit-card reveal d2">
+      <svg class="card-arch-svg" viewBox="0 0 280 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40,52 L40,30 Q140,2 240,30 L240,52" fill="none" stroke="#8C6A43" stroke-width="1.2" opacity="0.55"/>
+        <line x1="140" y1="2" x2="140" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.22"/>
+        <circle cx="140" cy="2" r="4" fill="#8C6A43" opacity="0.45"/>
+        <line x1="0" y1="52" x2="40" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.2"/>
+        <line x1="240" y1="52" x2="280" y2="52" stroke="#8C6A43" stroke-width="0.5" opacity="0.2"/>
+        <path d="M80,52 Q110,28 140,18 Q170,28 200,52" fill="none" stroke="#8C6A43" stroke-width="0.5" opacity="0.18"/>
+      </svg>
+      <h3>Tranquillité d'esprit</h3>
+      <p>Plus de check-ins tardifs, de voisins mécontents ou de voyageurs exigeants à gérer. Saint-Denis mérite un opérateur qui connaît son marché. Concentrez-vous sur l'essentiel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POINTED SEPARATOR (benefits → testimonials) -->
+<svg class="gothic-sep" style="background:var(--slate)" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,0 L0,56 L590,56 L720,8 L850,56 L1440,56 L1440,0 Z" fill="var(--limestone-b)"/>
+</svg>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials vitrail-bg" id="testimonials">
+  <div style="max-width:1000px;margin:0 auto;text-align:center;margin-bottom:52px">
+    <p class="sec-label reveal" style="color:var(--bronze)">Ils nous font confiance</p>
+    <h2 class="reveal d1" style="font-family:'Sora',sans-serif;font-size:clamp(1.9rem,3vw,2.6rem);font-weight:700;color:#fff;letter-spacing:-.02em">Ce que disent nos propriétaires</h2>
+  </div>
+  <div class="testi-grid" style="max-width:1000px;margin:0 auto">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Revenus multipliés par 2,5 en 4 mois. L'équipe connaît parfaitement les visiteurs du Stade et les touristes de la Basilique. Zéro stress de mon côté."</p>
+      <div class="testi-author"><strong>Aminata D.</strong> — T2 Saint-Denis Centre</div>
+    </div>
+    <div class="testi-card reveal d1">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Saint-Denis Pleyel est en train d'exploser. Hostopia l'a compris avant tout le monde et mes revenus en témoignent. +45% en 6 mois."</p>
+      <div class="testi-author"><strong>Rémi C.</strong> — Studio Pleyel, Saint-Denis</div>
+    </div>
+    <div class="testi-card reveal d2">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Je gérais moi-même et je perdais 30% du potentiel. Depuis qu'Hostopia gère tout, j'ai récupéré 15h par semaine et mes revenus ont décollé."</p>
+      <div class="testi-author"><strong>Fatou B.</strong> — Appartement 3 pièces, Stade de France</div>
+    </div>
+  </div>
+</section>
+
+<!-- POINTED SEPARATOR (testimonials → zone) -->
+<svg class="gothic-sep" style="background:var(--limestone)" viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0,56 L0,0 L590,0 L720,48 L850,0 L1440,0 L1440,56 Z" fill="var(--slate)"/>
+</svg>
+
+<!-- ZONE -->
+<section class="zone-sec grid-bg" id="zone">
+  <div class="zone-inner">
+    <div class="zone-text reveal">
+      <p class="sec-label">Notre expertise</p>
+      <h2>Experts du marché<br><em>Saint-Denis & Grand Paris</em></h2>
+      <p>Saint-Denis traverse une transformation historique. Stade de France, Saint-Denis Pleyel (hub du Grand Paris Express), Basilique millénaire, canal rénové — ce marché attire désormais autant les voyageurs d'affaires que les familles et les touristes culturels.</p>
+      <div class="zone-chips">
+        <span class="chip">Saint-Denis</span>
+        <span class="chip">Stade de France</span>
+        <span class="chip">Pleyel</span>
+        <span class="chip">La Plaine Saint-Denis</span>
       </div>
     </div>
-  </header>
-
-  <main>
-
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="orb orb-teal orb-1"></div>
-      <div class="orb orb-orange orb-2"></div>
-      <div class="orb orb-teal-light orb-3"></div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge reveal">
-            <span class="badge"><span class="badge-dot"></span>Conciergerie Airbnb Premium — Saint-Denis, 93</span>
-          </div>
-          <h1 id="hero-title" class="reveal reveal-delay-1">
-            Vous êtes propriétaire à Saint-Denis et souhaitez <span>faire du Airbnb&nbsp;?</span>
-          </h1>
-          <p class="hero-sub reveal reveal-delay-2">Saint-Denis héberge le Stade de France et attire des millions de visiteurs lors des grands événements. Votre Airbnb ici génère jusqu'à 5× les revenus habituels.</p>
-          <div class="hero-bottom reveal reveal-delay-3">
-            <div class="hero-stat"><span class="stat-number">3×</span><small>plus de revenus vs location classique</small></div>
-            <div class="hero-stat"><span class="stat-number">20+</span><small>logements gérés en Île-de-France</small></div>
-            <div class="hero-stat"><span class="stat-number">15h</span><small>de gestion économisées par semaine</small></div>
-          </div>
-        </div>
+    <div class="zone-stats reveal d1">
+      <div class="zone-stat">
+        <span class="zone-num">20+</span>
+        <span class="zone-label">Logements gérés</span>
       </div>
-    </section>
-
-    <div class="trust-strip">
-      <div class="container">
-        <div class="trust-inner">
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            Saint-Denis · Stade de France · Paris
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            15 ans d'expertise immobilière
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Assurance &amp; sélection des profils
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            Disponibles 7j/7
-          </div>
-        </div>
+      <div class="zone-stat">
+        <span class="zone-num">95%</span>
+        <span class="zone-label">Taux d'occupation</span>
+      </div>
+      <div class="zone-stat">
+        <span class="zone-num">3×</span>
+        <span class="zone-label">Revenus vs classique</span>
+      </div>
+      <div class="zone-stat">
+        <span class="zone-num">10'</span>
+        <span class="zone-label">De Paris centre</span>
       </div>
     </div>
+  </div>
+</section>
 
-    <section class="cta-section section-sm" aria-labelledby="cta-title">
-      <div class="container" style="display:flex;justify-content:center;">
-        <div class="cta-card reveal">
-          <div class="badge" style="background:rgba(107,168,160,0.08);">
-            <span class="badge-dot"></span>Appel découverte gratuit — 30 min
-          </div>
-          <h2 id="cta-title">Parlons de votre projet Airbnb à Saint-Denis</h2>
-          <p>Estimez votre potentiel locatif avec l'un de nos experts. Réponse sous 24h, sans engagement.</p>
-          <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-cta-main" target="_blank" rel="noopener">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Prendre rendez-vous avec un expert
-          </a>
-          <p class="cta-note">Sans engagement · Réponse sous 24h · Appel visio ou téléphone</p>
-        </div>
-      </div>
-    </section>
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <h2 class="reveal">Prêt à rentabiliser<br>votre bien à <em>Saint-Denis</em>&nbsp;?</h2>
+  <p class="reveal d1">Obtenez votre estimation personnalisée en 2 minutes</p>
+  <div class="reveal d2">
+    <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-bronze" style="font-size:1rem;padding:17px 44px;">
+      Estimer mes revenus →
+    </a>
+  </div>
+</section>
 
-    <section class="benefits-section section" aria-labelledby="benefits-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Pourquoi choisir Hostopia</span>
-          <div class="divider divider-center"></div>
-          <h2 id="benefits-title">Ce que vous gagnez en nous confiant votre bien à Saint-Denis</h2>
-          <p>Votre bien à Saint-Denis a un potentiel locatif exceptionnel. On s'en occupe.</p>
-        </header>
-        <div class="benefits-grid">
-          <article class="glass-card gradient-border benefit-card reveal">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-            <h3>Revenus optimisés</h3>
-            <p>Tarification dynamique par algorithme, optimisation du taux d'occupation, pricing selon les événements locaux. Jusqu'à 3× plus que la location longue durée.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>+40% vs gestion en solo</span>
-          </article>
-          <article class="glass-card gradient-border benefit-card reveal reveal-delay-1">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-            <h3>Gestion 100% déléguée</h3>
-            <p>Ménage professionnel, check-in/check-out autonome, communication voyageurs, linge hôtelier. Vous ne faites rien.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15h/semaine récupérées</span>
-          </article>
-          <article class="glass-card gradient-border benefit-card reveal reveal-delay-2">
-            <div class="icon-wrap"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <h3>Tranquillité d'esprit</h3>
-            <p>Sélection rigoureuse des profils voyageurs, assurance dommages, suivi qualité permanent. Votre bien est entre de bonnes mains.</p>
-            <span class="benefit-highlight"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Zéro mauvaise surprise</span>
-          </article>
-        </div>
-      </div>
-    </section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Conciergerie <em>Saint-Denis</em></div>
+  <div class="footer-links">
+    <a href="/">Accueil</a>
+    <a href="/qui-sommes-nous">Qui sommes-nous</a>
+    <a href="/blog">Blog</a>
+    <a href="https://hostopia.fr">Hostopia</a>
+    <a href="https://hostopia.fr/simulateur-estimer-mes-revenus">Simulateur</a>
+    <a href="https://hostopia.fr/mentions-legales">Mentions légales</a>
+  </div>
+  <p class="footer-copy">© 2025 Hostopia — Conciergerie Airbnb Saint-Denis · Grand Paris · Île-de-France</p>
+</footer>
 
-    <section class="section" style="background:var(--noir);" aria-labelledby="zone-title">
-      <div class="container">
-        <div class="zone-inner-grid">
-          <div class="reveal">
-            <span class="badge">Zone d'intervention</span>
-            <div class="divider"></div>
-            <h2 id="zone-title" style="color:var(--blanc);">Experts du marché Saint-Denis & Seine-Saint-Denis</h2>
-            <p style="color:rgba(255,255,255,0.6);font-size:17px;margin-top:20px;max-width:45ch;">Stade de France, grands concerts, compétitions sportives. Une demande locative événementielle exceptionnelle, avec des pics de revenus record.</p>
-            <ul style="margin-top:32px;display:flex;flex-direction:column;gap:16px;">
-              <li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Saint-Denis</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Saint-Ouen</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Stade de France</li><li style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.75);font-size:15px;"><svg width="18" height="18" fill="var(--teal)" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Aubervilliers</li>
-            </ul>
-          </div>
-          <div class="reveal reveal-delay-1">
-            <div class="glass-card-dark" style="padding:48px;border-radius:var(--radius-xl);">
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;">
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">20+</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">logements en gestion en Île-de-France</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">95%</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">taux d'occupation moyen en haute saison</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">3×</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">de revenus vs location longue durée</p></div>
-                <div style="text-align:center;"><div class="stat-number" style="font-size:3rem;">15</div><p style="color:rgba(255,255,255,0.5);font-size:14px;margin-top:8px;max-width:none;text-align:center;">ans d'expertise immobilière</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- WHATSAPP -->
+<a href="https://api.whatsapp.com/send/?phone=33767209266" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-label">Discutons sur WhatsApp</span>
+</a>
 
-    <section class="blog-section section" aria-labelledby="blog-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Ressources &amp; Conseils</span>
-          <div class="divider divider-center"></div>
-          <h2 id="blog-title">Le blog des propriétaires Airbnb à Saint-Denis</h2>
-          <p>Conseils, stratégies et retours d'expérience pour maximiser vos revenus locatifs à Saint-Denis.</p>
-        </header>
-        <div class="blog-coming-soon reveal">
-          <div style="font-size:48px;margin-bottom:20px;">✍️</div>
-          <h3>Contenu à venir</h3>
-          <p>Nos experts préparent des guides pratiques sur l'investissement Airbnb à Saint-Denis, la fiscalité LMNP, et les meilleures pratiques pour maximiser vos revenus.</p>
-          <div class="blog-topics">
-            <span class="topic-pill">Investissement Airbnb Saint-Denis</span>
-            <span class="topic-pill">Fiscalité LMNP</span>
-            <span class="topic-pill">Revenus locatifs 93</span>
-            <span class="topic-pill">Gestion déléguée</span>
-          </div>
-          <a href="/blog" class="btn btn-outline" style="margin-top:32px;">Voir tous les articles <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="background:linear-gradient(135deg,var(--teal-dark) 0%,var(--teal) 50%,var(--orange) 100%);text-align:center;" aria-label="CTA final">
-      <div class="container">
-        <h2 style="color:var(--blanc);margin-bottom:16px;" class="reveal">Prêt à rentabiliser votre bien à Saint-Denis&nbsp;?</h2>
-        <p style="color:rgba(255,255,255,0.8);font-size:18px;margin:0 auto 40px;max-width:50ch;" class="reveal reveal-delay-1">Rejoignez les propriétaires qui ont délégué leur gestion Airbnb et optimisé leurs revenus.</p>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-dark reveal reveal-delay-2" style="padding:18px 44px;font-size:17px;" target="_blank" rel="noopener">
-          Prendre rendez-vous — c'est gratuit
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="assets/logo-blanc.png" alt="Hostopia" class="footer-logo">
-          <p>Conciergerie Airbnb premium à Saint-Denis. Nous gérons votre bien pour maximiser vos revenus locatifs.</p>
-        </div>
-        <nav class="footer-col">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
-        </nav>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener">Prendre RDV</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=33767209266" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><a href="mailto:contact@hostopia.fr">Email</a></li>
-            <li><a href="https://hostopia.fr" target="_blank" rel="noopener">hostopia.fr</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Hostopia. Tous droits réservés.</p>
-        <p>Saint-Denis · Stade de France · Saint-Ouen</p>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0"
-     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span class="wa-label">Discutons sur WhatsApp</span>
-  </a>
-
-  <script>
-    const header = document.getElementById('site-header');
-    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 40); }, {passive:true});
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); } }),
-      {threshold:0.12, rootMargin:'0px 0px -40px 0px'}
-    );
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }});
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => io.observe(el));
+  // Hero elements appear immediately
+  setTimeout(() => document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible')), 120);
+</script>
 </body>
 </html>

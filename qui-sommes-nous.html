@@ -1,628 +1,266 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL60XQ455W"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YL60XQ455W');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Primary -->
-  <title>Qui sommes-nous | Hostopia Conciergerie Airbnb Saint-Denis — 15 ans d'expertise</title>
-  <meta name="description" content="Découvrez l'équipe Hostopia : 15 ans d'expertise immobilière, 20+ logements en gestion en Seine-et-Marne. Votre conciergerie Airbnb de confiance à Saint-Denis et Disneyland Paris.">
+  <title>Qui sommes-nous | Hostopia Conciergerie Airbnb Saint-Denis</title>
+  <meta name="description" content="L'équipe Hostopia : experts de la gestion Airbnb à Saint-Denis depuis 2010. Stade de France, Pleyel, Basilique. 20+ logements gérés.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://conciergeriesaintdenis.fr/qui-sommes-nous">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://conciergeriesaintdenis.fr/qui-sommes-nous">
-  <meta property="og:title" content="Qui sommes-nous | Hostopia Conciergerie Saint-Denis">
-  <meta property="og:description" content="15 ans d'expertise, 20+ logements en Seine-et-Marne. L'équipe Hostopia se présente.">
-  <meta property="og:image" content="https://conciergeriesaintdenis.fr/assets/og-image.jpg">
-  <meta property="og:locale" content="fr_FR">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Qui sommes-nous | Hostopia Conciergerie Saint-Denis">
-  <meta name="twitter:description" content="15 ans d'expertise, 20+ logements en gestion dans le 77.">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/base.css">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "Qui sommes-nous — Hostopia Conciergerie Saint-Denis",
-    "url": "https://conciergeriesaintdenis.fr/qui-sommes-nous",
-    "description": "15 ans d'expertise en gestion locative, plus de 20 logements en Seine-et-Marne.",
-    "mainEntity": {
-      "@type": "LocalBusiness",
-      "name": "Hostopia Conciergerie Saint-Denis",
-      "foundingDate": "2010",
-      "areaServed": ["Serris", "Val d'Europe", "Chessy", "Marne-la-Vallée"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Serris",
-        "postalCode": "77700",
-        "addressRegion": "Seine-et-Marne",
-        "addressCountry": "FR"
-      }
-    }
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    /* ── Page-specific: Qui sommes-nous ── */
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Inter',sans-serif; font-weight:300; color:#121212; background:#F2EFE8; overflow-x:hidden; }
 
-    .page-hero {
-      background: var(--noir);
-      padding: 160px 0 96px;
-      position: relative;
-      overflow: hidden;
+    :root {
+      --limestone:#F2EFE8; --limestone-b:#FAFAF7;
+      --slate:#263547; --slate-deep:#1B2A3A; --slate-night:#0E1B28;
+      --bronze:#8C6A43; --bronze-dark:#6E5232; --bronze-glow:#B8926A;
+      --steel:#7B8694; --text:#121212; --text-m:#4A4A55;
     }
 
-    .page-hero .orb-1 { width: 500px; height: 500px; top: -80px; right: -60px; }
-    .page-hero .orb-2 { width: 350px; height: 350px; bottom: -60px; left: -40px; }
+    h1,h2,h3 { font-family:'Sora',sans-serif; letter-spacing:-.02em; }
 
-    .page-hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 680px;
-    }
+    .reveal { opacity:0; transform:translateY(22px); transition:opacity .65s cubic-bezier(.22,1,.36,1), transform .65s cubic-bezier(.22,1,.36,1); }
+    .reveal.visible { opacity:1; transform:none; }
+    .d1{transition-delay:.08s;} .d2{transition-delay:.16s;} .d3{transition-delay:.24s;}
 
-    .page-hero h1 {
-      color: var(--blanc);
-      margin: 24px 0 20px;
-    }
+    .vitrail-bg { position:relative; }
+    .vitrail-bg::before { content:''; position:absolute; inset:0; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%238C6A43' stroke-width='0.5'%3E%3Cpolygon points='36,4 68,20 68,52 36,68 4,52 4,20' opacity='0.5'/%3E%3Cpolygon points='36,16 56,26 56,46 36,56 16,46 16,26' opacity='0.35'/%3E%3Cline x1='36' y1='4' x2='36' y2='68' opacity='0.3'/%3E%3Cline x1='4' y1='36' x2='68' y2='36' opacity='0.3'/%3E%3C/g%3E%3C/svg%3E"); opacity:.025; pointer-events:none; z-index:0; }
+    .vitrail-bg > * { position:relative; z-index:1; }
 
-    .page-hero h1 span {
-      background: linear-gradient(135deg, var(--teal-light), var(--orange-warm));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    .grid-bg { position:relative; }
+    .grid-bg::before { content:''; position:absolute; inset:0; background-image:linear-gradient(rgba(123,134,148,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(123,134,148,.07) 1px, transparent 1px); background-size:64px 64px; pointer-events:none; z-index:0; }
+    .grid-bg > * { position:relative; z-index:1; }
 
-    .page-hero p {
-      color: rgba(255,255,255,0.65);
-      font-size: 18px;
-    }
+    nav { position:fixed; top:0; left:0; right:0; z-index:200; background:var(--slate); padding:0 48px; height:64px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(140,106,67,.2); }
+    .nav-logo { font-family:'Sora',sans-serif; font-weight:700; font-size:1rem; color:#fff; text-decoration:none; }
+    .nav-logo em { color:var(--bronze); font-style:normal; }
+    .nav-links { display:flex; gap:28px; list-style:none; align-items:center; }
+    .nav-links a { color:rgba(255,255,255,.7); text-decoration:none; font-size:.84rem; font-weight:400; letter-spacing:.04em; transition:color .2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--bronze-glow); }
+    .nav-cta { background:var(--bronze)!important; color:#fff!important; padding:9px 22px; border-radius:6px; font-weight:600!important; font-family:'Sora',sans-serif; }
+    .nav-cta:hover { background:var(--bronze-dark)!important; }
 
-    /* Story Section */
-    .story-section {
-      background: var(--blanc);
-    }
+    .wa-float { position:fixed; bottom:28px; right:28px; z-index:999; background:#25D366; color:#fff; width:56px; height:56px; border-radius:28px; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow:0 4px 20px rgba(37,211,102,.4); transition:transform .25s, width .3s, padding .3s; overflow:hidden; white-space:nowrap; }
+    .wa-float svg { width:26px; height:26px; flex-shrink:0; }
+    .wa-label { display:none; font-size:.82rem; font-weight:500; margin-left:10px; margin-right:4px; }
+    .wa-float:hover { transform:scale(1.04); width:auto; padding:0 18px 0 14px; }
+    .wa-float:hover .wa-label { display:inline; }
 
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
+    /* PAGE HERO */
+    .page-hero { background:var(--slate-deep); padding:130px 24px 80px; text-align:center; position:relative; overflow:hidden; }
+    .page-hero::after { content:''; position:absolute; bottom:-1px; left:0; right:0; height:56px; background:var(--limestone); clip-path:polygon(0 56px, 40% 0, 50% 44px, 60% 0, 100% 56px, 100% 56px, 0 56px); }
+    .page-badge { display:inline-block; background:rgba(140,106,67,.14); border:1px solid rgba(140,106,67,.4); color:var(--bronze-glow); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; padding:7px 18px; border-radius:4px; margin-bottom:28px; }
+    .page-hero h1 { font-family:'Sora',sans-serif; font-size:clamp(2.6rem,5vw,4.2rem); font-weight:800; color:#fff; line-height:1.08; max-width:700px; margin:0 auto 20px; letter-spacing:-.03em; }
+    .page-hero h1 em { color:var(--bronze); font-style:normal; }
+    .page-hero p { color:rgba(255,255,255,.62); font-size:1rem; max-width:520px; margin:0 auto; line-height:1.75; }
 
-    .story-text h2 {
-      margin-bottom: 24px;
-    }
+    /* SECTIONS */
+    .section { padding:88px 24px; }
+    .container { max-width:960px; margin:0 auto; }
+    .sec-label { font-family:'Sora',sans-serif; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--bronze); margin-bottom:12px; }
+    .sec-title { font-family:'Sora',sans-serif; font-size:clamp(1.9rem,3vw,2.7rem); font-weight:700; color:var(--text); line-height:1.15; margin-bottom:20px; }
 
-    .story-text p {
-      color: var(--grey-600);
-      font-size: 17px;
-      margin-bottom: 20px;
-      line-height: 1.75;
-    }
+    /* STORY */
+    .story-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+    .story-visual { height:360px; position:relative; }
+    .story-frame { position:absolute; inset:0; background:var(--slate); border-radius:12px; border:1px solid rgba(140,106,67,.2); display:flex; align-items:center; justify-content:center; overflow:hidden; }
+    .story-frame::before { content:''; position:absolute; inset:20px; border:1px solid rgba(140,106,67,.15); border-radius:8px; }
+    .story-num { font-family:'Sora',sans-serif; font-size:5.5rem; font-weight:800; color:var(--bronze); line-height:1; opacity:.9; display:block; }
+    .story-sub { font-size:.72rem; color:rgba(255,255,255,.45); letter-spacing:.14em; text-transform:uppercase; margin-top:8px; }
+    .story-corner { position:absolute; bottom:-12px; right:-12px; width:96px; height:96px; background:var(--bronze); opacity:.1; border-radius:4px; }
+    .story-text p { font-size:.9rem; color:var(--text-m); line-height:1.82; margin-bottom:18px; }
 
-    .story-visual {
-      position: relative;
-    }
+    /* STATS ROW */
+    .stats-row { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:rgba(140,106,67,.12); }
+    .stat-cell { background:var(--slate); padding:40px 20px; text-align:center; }
+    .stat-big { font-family:'Sora',sans-serif; font-size:3rem; font-weight:800; color:var(--bronze); display:block; line-height:1; margin-bottom:8px; letter-spacing:-.03em; }
+    .stat-desc { font-size:.7rem; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.1em; line-height:1.5; }
 
-    .story-card-big {
-      padding: 48px;
-      background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
-      border-radius: var(--radius-xl);
-      color: var(--blanc);
-    }
+    /* VALUES */
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:56px; }
+    .value-card { background:rgba(255,255,255,.75); border:1px solid rgba(140,106,67,.18); border-radius:12px; padding:32px 24px; transition:box-shadow .3s, transform .25s, border-color .25s; position:relative; overflow:hidden; }
+    .value-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--bronze); transform:scaleX(0); transition:transform .4s; }
+    .value-card:hover::before { transform:scaleX(1); }
+    .value-card:hover { box-shadow:0 12px 40px rgba(38,53,71,.1); transform:translateY(-3px); border-color:rgba(140,106,67,.4); }
+    .val-num { font-family:'Sora',sans-serif; font-size:2.8rem; font-weight:800; color:rgba(140,106,67,.2); line-height:1; margin-bottom:14px; }
+    .value-card h3 { font-family:'Sora',sans-serif; font-size:1.15rem; font-weight:700; color:var(--slate); margin-bottom:10px; }
+    .value-card p { font-size:.85rem; color:var(--text-m); line-height:1.75; }
 
-    .story-card-big .big-number {
-      font-family: var(--font-display);
-      font-size: 6rem;
-      font-weight: 800;
-      line-height: 1;
-      opacity: 0.2;
-    }
+    /* TEAM */
+    .team-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .team-card { background:var(--slate); border:1px solid rgba(140,106,67,.14); border-radius:12px; padding:32px 22px; text-align:center; transition:border-color .3s; }
+    .team-card:hover { border-color:rgba(140,106,67,.35); }
+    .team-av { width:68px; height:68px; background:rgba(140,106,67,.1); border:1px solid rgba(140,106,67,.25); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-family:'Sora',sans-serif; font-size:1.5rem; font-weight:700; color:var(--bronze); }
+    .team-card h3 { font-family:'Sora',sans-serif; font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:5px; }
+    .team-role { font-size:.72rem; color:var(--bronze); letter-spacing:.1em; text-transform:uppercase; margin-bottom:12px; font-weight:600; }
+    .team-card p { font-size:.83rem; color:rgba(255,255,255,.55); line-height:1.7; }
 
-    .story-card-big h3 {
-      font-size: 1.8rem;
-      margin-top: -20px;
-      margin-bottom: 16px;
-    }
+    /* CTA */
+    .cta-final { background:linear-gradient(135deg, var(--slate-deep) 0%, #1E2D3C 40%, #3B2300 100%); padding:96px 24px; text-align:center; position:relative; overflow:hidden; }
+    .cta-final::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 110%, rgba(140,106,67,.22) 0%, transparent 55%); pointer-events:none; }
+    .cta-final h2 { font-family:'Sora',sans-serif; font-size:clamp(2rem,4vw,3.4rem); font-weight:800; color:#fff; max-width:600px; margin:0 auto 14px; line-height:1.1; letter-spacing:-.03em; }
+    .cta-final h2 em { color:var(--bronze); font-style:normal; }
+    .cta-final p { color:rgba(255,255,255,.58); font-size:.92rem; margin-bottom:40px; }
+    .btn-bronze { background:var(--bronze); color:#fff; text-decoration:none; padding:14px 36px; font-family:'Sora',sans-serif; font-size:.9rem; font-weight:600; letter-spacing:.04em; border-radius:6px; transition:background .25s, transform .2s; display:inline-block; }
+    .btn-bronze:hover { background:var(--bronze-dark); transform:translateY(-2px); }
 
-    .story-card-big p {
-      color: rgba(255,255,255,0.75);
-      font-size: 16px;
-    }
+    footer { background:var(--slate-night); padding:44px 24px; text-align:center; border-top:1px solid rgba(140,106,67,.1); }
+    .footer-logo { font-family:'Sora',sans-serif; font-weight:700; font-size:1rem; color:rgba(255,255,255,.4); margin-bottom:14px; }
+    .footer-logo em { color:var(--bronze); font-style:normal; }
+    .footer-links { display:flex; gap:24px; justify-content:center; margin-bottom:20px; flex-wrap:wrap; }
+    .footer-links a { color:rgba(255,255,255,.3); text-decoration:none; font-size:.77rem; transition:color .2s; }
+    .footer-links a:hover { color:rgba(255,255,255,.7); }
+    .footer-copy { font-size:.7rem; color:rgba(255,255,255,.18); }
 
-    .story-float-card {
-      position: absolute;
-      bottom: -28px;
-      right: -28px;
-      background: var(--blanc);
-      border-radius: var(--radius-lg);
-      padding: 24px 28px;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .story-float-card .float-number {
-      font-family: var(--font-display);
-      font-size: 2.5rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--teal), var(--orange));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      line-height: 1;
-    }
-
-    .story-float-card .float-label {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--grey-600);
-      max-width: 100px;
-      line-height: 1.4;
-    }
-
-    @media (max-width: 900px) {
-      .story-grid { grid-template-columns: 1fr; gap: 48px; }
-      .story-float-card { position: static; margin-top: 20px; display: inline-flex; }
-    }
-
-    /* Values Section */
-    .values-section {
-      background: var(--grey-100);
-    }
-
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-      margin-top: 48px;
-    }
-
-    .value-card {
-      padding: 40px 32px;
-      text-align: center;
-    }
-
-    .value-icon {
-      width: 72px;
-      height: 72px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, rgba(107,168,160,0.12), rgba(107,168,160,0.06));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-size: 28px;
-    }
-
-    .value-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 12px;
-    }
-
-    .value-card p {
-      color: var(--grey-600);
-      font-size: 15px;
-      line-height: 1.7;
-      margin: 0 auto;
-    }
-
-    @media (max-width: 900px) {
-      .values-grid { grid-template-columns: 1fr; }
-    }
-
-    /* Timeline */
-    .timeline-section {
-      background: var(--blanc);
-    }
-
-    .timeline {
-      position: relative;
-      max-width: 700px;
-      margin: 48px auto 0;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--teal), var(--orange));
-      transform: translateX(-50%);
-    }
-
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: 24px;
-      align-items: center;
-      margin-bottom: 48px;
-    }
-
-    .timeline-item:nth-child(even) .timeline-content {
-      grid-column: 3;
-      grid-row: 1;
-    }
-
-    .timeline-item:nth-child(even) .timeline-empty {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .timeline-dot {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: var(--teal);
-      border: 3px solid var(--blanc);
-      box-shadow: 0 0 0 3px var(--teal);
-      grid-column: 2;
-      z-index: 1;
-    }
-
-    .timeline-content {
-      padding: 24px;
-      background: var(--grey-100);
-      border-radius: var(--radius-md);
-    }
-
-    .timeline-year {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--teal-dark);
-      margin-bottom: 6px;
-    }
-
-    .timeline-content h4 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    .timeline-content p {
-      font-size: 14px;
-      color: var(--grey-600);
-    }
-
-    /* Timeline mobile */
-    @media (max-width: 640px) {
-      .timeline::before { left: 12px; transform: none; }
-      .timeline-item {
-        grid-template-columns: 28px 1fr;
-        gap: 14px;
-        margin-bottom: 28px;
-      }
-      .timeline-empty { display: none !important; }
-      .timeline-dot {
-        grid-column: 1 !important;
-        grid-row: 1 !important;
-        align-self: start;
-        margin-top: 4px;
-      }
-      .timeline-content {
-        grid-column: 2 !important;
-        grid-row: 1 !important;
-      }
-    }
-
-    /* Zone Section */
-    .zone-section {
-      background: var(--noir);
-    }
-
-    .zone-tags {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .zone-tag {
-      padding: 12px 24px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 100px;
-      font-size: 15px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.8);
-      transition: var(--transition);
-    }
-
-    .zone-tag:hover,
-    .zone-tag.primary {
-      background: rgba(107,168,160,0.15);
-      border-color: var(--teal);
-      color: var(--teal-light);
+    @media (max-width:860px) {
+      nav { padding:0 20px; } .nav-links { display:none; }
+      .story-grid { grid-template-columns:1fr; }
+      .story-visual { height:240px; }
+      .values-grid, .team-grid { grid-template-columns:1fr; }
+      .stats-row { grid-template-columns:1fr 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ─── Header ─────────────────────────── -->
-  <header class="site-header scrolled" id="site-header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="/">
-          <img src="assets/logo-blanc.png" alt="Hostopia" class="header-logo">
-        </a>
-        <nav class="header-nav" aria-label="Navigation principale">
-          <a href="/">Accueil</a>
-          <a href="qui-sommes-nous.html" style="color: var(--teal-light);">Qui sommes-nous</a>
-          <a href="/blog">Blog</a>
-        </nav>
-        <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary header-cta" target="_blank" rel="noopener">
-          Prendre RDV
-        </a>
+<nav>
+  <a href="/" class="nav-logo">Conciergerie <em>Saint-Denis</em></a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/qui-sommes-nous" class="active">Qui sommes-nous</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <div class="page-badge">Notre histoire</div>
+  <h1 class="reveal">L'équipe qui connaît<br><em>Saint-Denis</em> par cœur</h1>
+  <p class="reveal d1">Depuis 2010, nous gérons des biens dans le 93. Nous connaissons chaque quartier, chaque cycle d'événements, chaque opportunité du marché locatif de Saint-Denis.</p>
+</section>
+
+<!-- STORY -->
+<section class="section vitrail-bg" style="background:var(--limestone)">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-visual reveal">
+        <div class="story-frame">
+          <div style="text-align:center">
+            <span class="story-num">2010</span>
+            <span class="story-sub">Fondée à Saint-Denis</span>
+          </div>
+        </div>
+        <div class="story-corner"></div>
+      </div>
+      <div class="reveal d1">
+        <p class="sec-label">Notre histoire</p>
+        <h2 class="sec-title" style="color:var(--slate)">Nés de la transformation<br>du Grand Paris</h2>
+        <p class="story-text">Hostopia est né d'une conviction : Saint-Denis allait devenir l'un des marchés locatifs les plus dynamiques d'Île-de-France. Nous l'avons vu avant tout le monde — avant Pleyel, avant le Grand Paris Express, avant la transformation de La Plaine.</p>
+        <div class="story-text"><p>Nous avons commencé avec 3 logements à Saint-Denis Centre. Aujourd'hui, notre portefeuille couvre le 93 et l'ensemble de l'Île-de-France, avec une expertise profonde sur les cycles de demande liés au Stade de France, aux congrès de La Plaine et au tourisme patrimonial autour de la Basilique.</p></div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat-cell reveal"><span class="stat-big">20+</span><span class="stat-desc">Logements gérés</span></div>
+  <div class="stat-cell reveal d1"><span class="stat-big">95%</span><span class="stat-desc">Taux d'occupation</span></div>
+  <div class="stat-cell reveal d2"><span class="stat-big">3×</span><span class="stat-desc">Revenus vs classique</span></div>
+  <div class="stat-cell reveal d3"><span class="stat-big">10'</span><span class="stat-desc">De Paris centre</span></div>
+</div>
 
-    <!-- ─── Page Hero ───────────────────────── -->
-    <section class="page-hero" aria-labelledby="page-title">
-      <div class="orb orb-teal orb-1"></div>
-      <div class="orb orb-orange orb-2"></div>
-      <div class="container">
-        <div class="page-hero-content">
-          <span class="badge">Notre histoire</span>
-          <h1 id="page-title">
-            Des passionnés d'immobilier <span>au service des propriétaires du 77</span>
-          </h1>
-          <p>
-            15 ans d'expertise, 20+ logements en gestion, une connaissance intime du marché Saint-Denis et Île-de-France. Nous ne gérons pas des biens — nous gérons votre patrimoine.
-          </p>
-        </div>
+<!-- VALUES -->
+<section class="section grid-bg" style="background:var(--limestone-b)">
+  <div class="container">
+    <p class="sec-label reveal" style="text-align:center">Ce qui nous définit</p>
+    <h2 class="sec-title reveal d1" style="text-align:center;max-width:500px;margin:0 auto 0">Nos engagements envers<br>les propriétaires</h2>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="val-num">01</div>
+        <h3>Expertise Grand Paris</h3>
+        <p>Nous connaissons les cycles de demande spécifiques à Saint-Denis : matchs au Stade, concerts, congrès de La Plaine, vacances scolaires. Nos tarifs s'ajustent en temps réel.</p>
       </div>
-    </section>
-
-    <!-- ─── Story ───────────────────────────── -->
-    <section class="story-section section" aria-labelledby="story-title">
-      <div class="container">
-        <div class="story-grid">
-          <div class="story-text reveal">
-            <span class="badge">Notre parcours</span>
-            <div class="divider"></div>
-            <h2 id="story-title">De l'investissement personnel à la gestion professionnelle</h2>
-            <p>
-              Tout a commencé par nos propres investissements locatifs en Seine-et-Marne. Face à la complexité de la gestion Airbnb — communication nocturne, ménage, dépannages — nous avons développé nos processus pour automatiser et déléguer.
-            </p>
-            <p>
-              Rapidement, d'autres propriétaires nous ont demandé d'appliquer la même méthode à leurs biens. Aujourd'hui, Hostopia Serris gère plus de 20 logements dans la zone Disneyland Paris — Val d'Europe, avec des résultats qui parlent d'eux-mêmes.
-            </p>
-            <p>
-              Notre avantage : nous sommes investisseurs avant d'être prestataires. Nous pensons rentabilité, pas seulement service.
-            </p>
-          </div>
-
-          <div class="story-visual reveal reveal-delay-1">
-            <div class="story-card-big">
-              <div class="big-number">15</div>
-              <h3>ans d'expertise<br>immobilière</h3>
-              <p>En gestion locative et investissement Airbnb en Seine-et-Marne</p>
-            </div>
-            <div class="story-float-card">
-              <div class="float-number">20+</div>
-              <div class="float-label">logements en gestion dans le 77</div>
-            </div>
-          </div>
-        </div>
+      <div class="value-card reveal d1">
+        <div class="val-num">02</div>
+        <h3>Transparence totale</h3>
+        <p>Rapport mensuel détaillé : revenus, taux d'occupation, évaluations voyageurs, dépenses. Tableau de bord accessible 24h/24. Aucun frais caché.</p>
       </div>
-    </section>
-
-    <!-- ─── Valeurs ──────────────────────────── -->
-    <section class="values-section section" aria-labelledby="values-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Ce qui nous guide</span>
-          <div class="divider divider-center"></div>
-          <h2 id="values-title">Nos 3 piliers</h2>
-          <p>Les valeurs qui définissent notre approche et notre relation avec chaque propriétaire.</p>
-        </header>
-
-        <div class="values-grid">
-          <article class="glass-card value-card reveal">
-            <div class="value-icon">📈</div>
-            <h3>Performance d'abord</h3>
-            <p>Chaque décision — tarif, calendrier, description — est guidée par les données. Notre objectif : maximiser votre rentabilité mesurable, pas juste votre occupation.</p>
-          </article>
-
-          <article class="glass-card value-card reveal reveal-delay-1">
-            <div class="value-icon">🤝</div>
-            <h3>Transparence totale</h3>
-            <p>Rapports mensuels détaillés, accès en temps réel à vos statistiques, pas de frais cachés. Vous savez toujours exactement ce que nous faisons et ce que vous gagnez.</p>
-          </article>
-
-          <article class="glass-card value-card reveal reveal-delay-2">
-            <div class="value-icon">🏆</div>
-            <h3>Excellence opérationnelle</h3>
-            <p>Ménage 5 étoiles, linge hôtelier, check-in digital, maintenance préventive. Votre bien mérite le même standard qu'un boutique-hôtel.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─── Timeline ─────────────────────────── -->
-    <section class="timeline-section section" aria-labelledby="timeline-title">
-      <div class="container">
-        <header class="section-header">
-          <span class="badge">Notre histoire</span>
-          <div class="divider divider-center"></div>
-          <h2 id="timeline-title">15 ans d'expertise, une évolution constante</h2>
-        </header>
-
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-content">
-              <div class="timeline-year">2010</div>
-              <h4>Les premiers investissements</h4>
-              <p>Premiers achats immobiliers en Seine-et-Marne. Découverte du potentiel locatif près de Disneyland Paris.</p>
-            </div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-empty"></div>
-          </div>
-
-          <div class="timeline-item reveal reveal-delay-1">
-            <div class="timeline-empty"></div>
-            <div class="timeline-dot" style="background: var(--orange);"></div>
-            <div class="timeline-content">
-              <div class="timeline-year" style="color:var(--orange);">2016</div>
-              <h4>Lancement Airbnb</h4>
-              <p>Passage à la location courte durée sur nos propres biens. Résultats : +180% de revenus vs location classique.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal reveal-delay-2">
-            <div class="timeline-content">
-              <div class="timeline-year">2019</div>
-              <h4>Les premiers mandats</h4>
-              <p>Des propriétaires voisins nous confient leurs biens. Construction du modèle Hostopia.</p>
-            </div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-empty"></div>
-          </div>
-
-          <div class="timeline-item reveal">
-            <div class="timeline-empty"></div>
-            <div class="timeline-dot" style="background: var(--teal-light);"></div>
-            <div class="timeline-content">
-              <div class="timeline-year" style="color:var(--teal-light);">2025</div>
-              <h4>Hostopia Serris — 20+ biens</h4>
-              <p>Plus de 20 logements en gestion active, taux d'occupation 95% en haute saison, présence sur tout le secteur Val d'Europe.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─── Zone d'intervention ──────────────── -->
-    <section class="zone-section section" aria-labelledby="zone-title">
-      <div class="container">
-        <div style="max-width:680px;">
-          <span class="badge">Zone d'intervention</span>
-          <div class="divider"></div>
-          <h2 id="zone-title" style="color:var(--blanc);">
-            Nous couvrons tout<br>
-            <span style="background: linear-gradient(135deg, var(--teal-light), var(--orange-warm)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">le secteur Disneyland</span>
-          </h2>
-          <p style="color:rgba(255,255,255,0.6); font-size:17px; margin-top:20px; max-width:52ch;">
-            De Serris à Val d'Europe, en passant par Chessy et Marne-la-Vallée — notre connaissance de terrain est notre force.
-          </p>
-          <div class="zone-tags reveal">
-            <span class="zone-tag primary">Serris</span>
-            <span class="zone-tag">Chessy</span>
-            <span class="zone-tag">Val d'Europe</span>
-            <span class="zone-tag">Disneyland Paris</span>
-            <span class="zone-tag">Marne-la-Vallée</span>
-            <span class="zone-tag">Coupvray</span>
-            <span class="zone-tag">Bailly-Romainvilliers</span>
-            <span class="zone-tag">Magny-le-Hongre</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─── CTA Final ────────────────────────── -->
-    <section class="section" style="background: var(--cream); text-align:center;" aria-label="Appel à l'action">
-      <div class="container">
-        <h2 class="reveal" style="margin-bottom:16px;">Prêt à travailler avec nous&nbsp;?</h2>
-        <p class="reveal reveal-delay-1" style="color:var(--grey-600); font-size:18px; margin:0 auto 40px; max-width:48ch;">
-          Discutons de votre bien et de son potentiel Airbnb à Saint-Denis. Premier échange gratuit, sans engagement.
-        </p>
-        <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;" class="reveal reveal-delay-2">
-          <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn-primary" style="padding:16px 36px;" target="_blank" rel="noopener">
-            Prendre rendez-vous
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0" class="btn btn-outline" style="padding:16px 36px;" target="_blank" rel="noopener">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Écrire sur WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ─── Footer ─────────────────────────── -->
-  <footer class="site-footer" aria-label="Pied de page">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="assets/logo-blanc.png" alt="Hostopia" class="footer-logo">
-          <p>Conciergerie Airbnb premium à Saint-Denis et en Seine-et-Marne. Nous gérons votre bien pour maximiser vos revenus locatifs.</p>
-        </div>
-        <nav class="footer-col" aria-label="Liens du site">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
-        </nav>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" target="_blank" rel="noopener">Prendre RDV</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><a href="mailto:contact@hostopia.fr">Email</a></li>
-            <li><a href="https://hostopia.fr" target="_blank" rel="noopener">hostopia.fr</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Hostopia. Tous droits réservés.</p>
-        <p>Serris · Chessy · Val d'Europe · Marne-la-Vallée</p>
+      <div class="value-card reveal d2">
+        <div class="val-num">03</div>
+        <h3>Service 7j/7</h3>
+        <p>Check-in autonome, accueil personnalisé, ménage professionnel, maintenance express. Vos voyageurs repartent avec 5 étoiles — systématiquement.</p>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- ─── WhatsApp Floating Button ────────── -->
-  <a href="https://api.whatsapp.com/send/?phone=33767209266&text=Bonjour+et+bienvenue+chez+HOSTOPIA.%0ANous+aidons+les+propri%C3%A9taires+%C3%A0+augmenter+la+rentabilit%C3%A9+de+leur+logement+en+location+courte+dur%C3%A9e%2C+sans+les+contraintes+de+gestion.%0A%0APour+vous+r%C3%A9pondre+au+mieux%2C+dans+quelle+ville+se+situe+votre+logement+%3F&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    <span class="wa-label">Discutons sur WhatsApp</span>
-  </a>
+<!-- TEAM -->
+<section class="section vitrail-bg" style="background:var(--slate)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <p class="sec-label reveal" style="color:var(--bronze)">L'équipe</p>
+      <h2 class="reveal d1" style="font-size:clamp(1.9rem,3vw,2.6rem);font-weight:800;color:#fff">Des visages derrière chaque logement</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-av">L</div>
+        <h3>Lounes</h3>
+        <div class="team-role">Fondateur & Stratégie</div>
+        <p>Expert en gestion locative courte durée. A identifié le potentiel de Saint-Denis bien avant la transformation Pleyel.</p>
+      </div>
+      <div class="team-card reveal d1">
+        <div class="team-av">O</div>
+        <h3>Opérations</h3>
+        <div class="team-role">Gestion terrain</div>
+        <p>Coordination des check-ins, ménage et maintenance sur tous les biens. Disponible 7j/7 pour les imprévus.</p>
+      </div>
+      <div class="team-card reveal d2">
+        <div class="team-av">R</div>
+        <h3>Relations voyageurs</h3>
+        <div class="team-role">Support & Avis</div>
+        <p>Gestion des messages Airbnb, des demandes spéciales et des avis. Notre cible : 5 étoiles sur chaque séjour.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script>
-    // Header scroll — this page starts scrolled
-    const header = document.getElementById('site-header');
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 40);
-      if (window.scrollY <= 40) header.classList.add('scrolled');
-    }, { passive: true });
+<!-- CTA -->
+<section class="cta-final">
+  <h2 class="reveal">Prêt à nous confier<br>votre bien à <em>Saint-Denis</em>&nbsp;?</h2>
+  <p class="reveal d1">Appel découverte gratuit de 30 minutes — sans engagement</p>
+  <div class="reveal d2">
+    <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-bronze" target="_blank" rel="noopener">Prendre rendez-vous →</a>
+  </div>
+</section>
 
-    // Scroll reveal
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      }),
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    );
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+<footer>
+  <div class="footer-logo">Conciergerie <em>Saint-Denis</em></div>
+  <div class="footer-links">
+    <a href="/">Accueil</a><a href="/qui-sommes-nous">Qui sommes-nous</a><a href="/blog">Blog</a>
+    <a href="https://hostopia.fr">Hostopia</a><a href="https://hostopia.fr/mentions-legales">Mentions légales</a>
+  </div>
+  <p class="footer-copy">© 2025 Hostopia — Conciergerie Airbnb Saint-Denis · Grand Paris · Île-de-France</p>
+</footer>
 
+<a href="https://api.whatsapp.com/send/?phone=33767209266" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-label">Discutons sur WhatsApp</span>
+</a>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}}), {threshold:.1});
+  els.forEach(el => io.observe(el));
+  setTimeout(() => document.querySelectorAll('.page-hero .reveal').forEach(el => el.classList.add('visible')), 100);
+</script>
 </body>
 </html>
