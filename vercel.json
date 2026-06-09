@@ -15,6 +15,8 @@
     { "source": "/combien-rapporte-airbnb-saint-denis", "destination": "/blog/combien-rapporte-airbnb-saint-denis", "permanent": true },
     { "source": "/stade-france-airbnb-saint-denis", "destination": "/blog/stade-france-airbnb-saint-denis", "permanent": true },
     { "source": "/grand-paris-express-pleyel-location-saisonniere", "destination": "/blog/grand-paris-express-pleyel-location-saisonniere", "permanent": true },
-    { "source": "/reglementation-location-courte-duree-saint-denis-2026", "destination": "/blog/reglementation-location-courte-duree-saint-denis-2026", "permanent": true }
+    { "source": "/reglementation-location-courte-duree-saint-denis-2026", "destination": "/blog/reglementation-location-courte-duree-saint-denis-2026", "permanent": true },
+    { "source": "/home-staging-decoration-airbnb-saint-denis", "destination": "/blog/home-staging-decoration-airbnb-saint-denis", "permanent": true },
+    { "source": "/profil-voyageur-airbnb-saint-denis", "destination": "/blog/profil-voyageur-airbnb-saint-denis", "permanent": true }
   ]
 }
