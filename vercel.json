@@ -19,6 +19,8 @@
     { "source": "/home-staging-decoration-airbnb-saint-denis", "destination": "/blog/home-staging-decoration-airbnb-saint-denis", "permanent": true },
     { "source": "/profil-voyageur-airbnb-saint-denis", "destination": "/blog/profil-voyageur-airbnb-saint-denis", "permanent": true },
     { "source": "/taxe-sejour-declaration-airbnb-saint-denis-2026", "destination": "/blog/taxe-sejour-declaration-airbnb-saint-denis-2026", "permanent": true },
-    { "source": "/acheter-investir-airbnb-saint-denis-2026", "destination": "/blog/acheter-investir-airbnb-saint-denis-2026", "permanent": true }
+    { "source": "/acheter-investir-airbnb-saint-denis-2026", "destination": "/blog/acheter-investir-airbnb-saint-denis-2026", "permanent": true },
+    { "source": "/tarification-dynamique-airbnb-saint-denis", "destination": "/blog/tarification-dynamique-airbnb-saint-denis", "permanent": true },
+    { "source": "/conciergerie-airbnb-saint-denis-prix-avantages", "destination": "/blog/conciergerie-airbnb-saint-denis-prix-avantages", "permanent": true }
   ]
 }
