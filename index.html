@@ -208,10 +208,50 @@
     .footer-links a:hover { color: rgba(255,255,255,.7); }
     .footer-copy { font-size: .7rem; color: rgba(255,255,255,.18); }
 
+    /* ── HAMBURGER ── */
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+      z-index: 300;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: #fff; border-radius: 2px;
+      transition: transform .3s, opacity .3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ── MOBILE OVERLAY ── */
+    .nav-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: var(--slate-night);
+      z-index: 250;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity .35s ease;
+    }
+    .nav-overlay.open { opacity: 1; pointer-events: auto; }
+    .nav-overlay a {
+      color: rgba(255,255,255,.75); text-decoration: none;
+      font-family: 'Sora', sans-serif; font-size: 1.4rem; font-weight: 600;
+      padding: 16px 0; letter-spacing: .02em;
+      transition: color .2s;
+    }
+    .nav-overlay a:hover { color: var(--bronze-glow); }
+    .nav-overlay .nav-cta-mobile {
+      background: var(--bronze); color: #fff !important;
+      padding: 13px 36px; border-radius: 6px; margin-top: 20px;
+      font-size: 1.05rem;
+    }
+    .nav-overlay .nav-cta-mobile:hover { background: var(--bronze-dark); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 880px) {
       nav { padding: 0 20px; }
       .nav-links { display: none; }
+      .hamburger { display: flex; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
       .stat-col:nth-child(3) { border-left: none; }
       .benefit-cards, .testi-grid { grid-template-columns: 1fr; }
@@ -224,6 +264,9 @@
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">Conciergerie <em>Saint-Denis</em></a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="/">Accueil</a></li>
     <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
@@ -231,6 +274,14 @@
     <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
   </ul>
 </nav>
+
+<!-- MOBILE OVERLAY -->
+<div class="nav-overlay" id="navOverlay">
+  <a href="/">Accueil</a>
+  <a href="/qui-sommes-nous">Qui sommes-nous</a>
+  <a href="/blog">Blog</a>
+  <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta-mobile" target="_blank" rel="noopener">Prendre rendez-vous</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -593,6 +644,25 @@
   revealEls.forEach(el => io.observe(el));
   // Hero elements appear immediately
   setTimeout(() => document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible')), 120);
+
+  // ── HAMBURGER TOGGLE ──
+  const hamburger = document.getElementById('hamburger');
+  const overlay = document.getElementById('navOverlay');
+  if (hamburger && overlay) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      overlay.classList.toggle('open');
+      document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+    });
+    // Close overlay when a link is clicked
+    overlay.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
 </script>
 </body>
 </html>
