@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscalité et déclaration des revenus Airbnb à Saint-Denis en 2026 — Conciergerie Saint-Denis</title>
+    <meta name="description" content="Guide complet de la fiscalité Airbnb à Saint-Denis en 2026 : régime micro-BIC ou réel, déclaration des revenus, abattements, taxe de séjour, CFE, TVA, et conseils d'optimisation pour propriétaires en Seine-Saint-Denis.">
+    <meta name="keywords" content="fiscalité Airbnb Saint-Denis 2026, déclaration revenus Airbnb 93, micro-BIC location meublée, régime réel Airbnb, taxe de séjour Saint-Denis, CFE location saisonnière, imposition Airbnb Seine-Saint-Denis, LMNP Saint-Denis, abattement forfaitaire Airbnb">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://conciergeriesaintdenis.fr/blog/fiscalite-declaration-revenus-airbnb-saint-denis-2026/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Fiscalité et déclaration des revenus Airbnb à Saint-Denis en 2026">
+    <meta property="og:description" content="Tout savoir sur la fiscalité Airbnb à Saint-Denis : micro-BIC vs régime réel, abattements, taxe de séjour, CFE, TVA et conseils d'optimisation fiscale pour propriétaires.">
+    <meta property="og:url" content="https://conciergeriesaintdenis.fr/blog/fiscalite-declaration-revenus-airbnb-saint-denis-2026/">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fiscalité et déclaration des revenus Airbnb à Saint-Denis en 2026">
+    <meta name="twitter:description" content="Guide fiscal complet Airbnb Saint-Denis 2026 : micro-BIC, réel, taxe de séjour, CFE, déclaration d'enregistrement — optimisez votre imposition.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: var(--text);
+            background: var(--limestone);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--bronze); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--bronze-glow); }
+        ul, ol { padding-left: 1.4rem; }
+
+        /* ===== DESIGN SYSTEM ===== */
+        :root {
+            --limestone: #F2EFE8;
+            --limestone-b: #FAFAF7;
+            --slate: #263547;
+            --slate-deep: #1B2A3A;
+            --slate-night: #0E1B28;
+            --bronze: #8C6A43;
+            --bronze-dark: #6E5232;
+            --bronze-glow: #B8926A;
+            --steel: #7B8694;
+            --text: #121212;
+            --text-m: #4A4A55;
+        }
+
+        /* ===== NAV ===== */
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            background: var(--slate);
+            z-index: 1000;
+            padding: 0.8rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+        }
+        .navbar__logo {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--limestone);
+            letter-spacing: 0.02em;
+        }
+        .navbar__logo span { color: var(--bronze-glow); }
+        .navbar__links { display: flex; gap: 1.5rem; list-style: none; }
+        .navbar__links a {
+            color: var(--limestone-b);
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+        .navbar__links a:hover { opacity: 1; color: var(--bronze-glow); }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: var(--slate-deep);
+            background-image: radial-gradient(ellipse at 20% 50%, rgba(140,106,67,0.15) 0%, transparent 60%),
+                              radial-gradient(ellipse at 80% 30%, rgba(183,146,106,0.10) 0%, transparent 50%);
+            padding: 7rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        }
+        .hero__tag {
+            display: inline-block;
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--bronze-glow);
+            background: rgba(140,106,67,0.18);
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+            color: var(--limestone-b);
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            line-height: 1.15;
+        }
+        .hero__sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--steel);
+            max-width: 620px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .hero__meta {
+            font-size: 0.8rem;
+            color: var(--steel);
+            opacity: 0.7;
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            background: var(--slate-deep);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            border-radius: 12px;
+        }
+        .cta-banner h3 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--limestone-b);
+            margin-bottom: 0.6rem;
+        }
+        .cta-banner p {
+            color: var(--steel);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-block;
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.85rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.25s;
+            border: none;
+            text-decoration: none;
+        }
+        .btn--bronze {
+            background: var(--bronze);
+            color: var(--limestone-b);
+        }
+        .btn--bronze:hover {
+            background: var(--bronze-glow);
+            color: var(--limestone-b);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(140,106,67,0.35);
+        }
+        .btn--outline {
+            background: transparent;
+            color: var(--limestone-b);
+            border: 1.5px solid var(--bronze);
+            margin-left: 1rem;
+        }
+        .btn--outline:hover {
+            background: var(--bronze);
+            color: var(--limestone-b);
+        }
+
+        /* ===== LAYOUT ===== */
+        .article-wrapper {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+            display: flex;
+            gap: 2.5rem;
+        }
+        .article-content {
+            flex: 1;
+            min-width: 0;
+        }
+        .article-content h2 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+            color: var(--slate-night);
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.25;
+        }
+        .article-content h3 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--slate-deep);
+            margin-top: 2rem;
+            margin-bottom: 0.7rem;
+        }
+        .article-content p {
+            margin-bottom: 1.1rem;
+            color: var(--text);
+        }
+        .article-content p.lead {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-m);
+            line-height: 1.8;
+            border-left: 3px solid var(--bronze);
+            padding-left: 1.2rem;
+            margin-bottom: 1.8rem;
+        }
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 1.3rem;
+            color: var(--text);
+        }
+        .article-content li { margin-bottom: 0.4rem; }
+        .article-content strong { color: var(--slate-night); }
+        .article-content table + p { margin-top: 0.5rem; }
+
+        /* ===== STAT HIGHLIGHT ===== */
+        .stat-highlight {
+            border-left: 3px solid var(--bronze);
+            background: var(--limestone-b);
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .stat-highlight__number {
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            font-size: 2rem;
+            color: var(--bronze-dark);
+            line-height: 1;
+        }
+        .stat-highlight__label {
+            font-size: 0.9rem;
+            color: var(--text-m);
+            margin-top: 0.25rem;
+        }
+        .stat-highlight p { margin-bottom: 0.3rem; }
+
+        /* ===== TABLE ===== */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.8rem 0;
+            font-size: 0.9rem;
+        }
+        .data-table thead th {
+            background: var(--slate);
+            color: var(--limestone-b);
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+        .data-table tbody td {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid #ddd;
+            color: var(--text);
+        }
+        .data-table tbody tr:nth-child(even) { background: var(--limestone-b); }
+        .data-table tbody tr:hover { background: rgba(140,106,67,0.06); }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 6rem;
+            align-self: start;
+        }
+        .sidebar__card {
+            background: var(--limestone-b);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+        .sidebar__card h4 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--slate-night);
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bronze);
+        }
+        .sidebar__toc ol {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar__toc li {
+            margin-bottom: 0.5rem;
+            font-size: 0.88rem;
+        }
+        .sidebar__toc a {
+            color: var(--text-m);
+            display: block;
+            padding: 0.35rem 0.5rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .sidebar__toc a:hover {
+            background: rgba(140,106,67,0.08);
+            color: var(--bronze-dark);
+            padding-left: 0.8rem;
+        }
+        .sidebar__cta .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0.7rem;
+        }
+        .sidebar__cta .btn--outline {
+            color: var(--bronze);
+            border-color: var(--bronze);
+        }
+        .sidebar__cta .btn--outline:hover {
+            color: var(--limestone-b);
+        }
+
+        /* ===== FAQ ===== */
+        .faq-item {
+            border-bottom: 1px solid #e0ddd6;
+            padding: 1.2rem 0;
+        }
+        .faq-item:first-child { padding-top: 0; }
+        .faq-question {
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--slate-deep);
+            cursor: default;
+            margin-bottom: 0.3rem;
+        }
+        .faq-answer {
+            color: var(--text-m);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ===== FOOTER ===== */
+        .article-footer {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+            border-top: 1px solid #e0ddd6;
+            text-align: center;
+        }
+        .article-footer p {
+            font-size: 0.85rem;
+            color: var(--steel);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 860px) {
+            .article-wrapper { flex-direction: column; }
+            .sidebar {
+                width: 100%;
+                position: static;
+                order: -1;
+            }
+            .btn--outline { margin-left: 0; margin-top: 0.5rem; }
+            .cta-banner .btn--outline { margin-left: 1rem; margin-top: 0; }
+            .navbar__links { display: none; }
+        }
+        @media (max-width: 540px) {
+            .hero { padding: 6rem 1.2rem 3rem; }
+            .article-wrapper { padding: 1.5rem 1rem 3rem; }
+            .cta-banner { padding: 1.8rem 1.2rem; }
+            .cta-banner .btn--outline { margin-left: 0; margin-top: 0.6rem; display: block; }
+            .data-table { font-size: 0.8rem; }
+            .data-table thead th,
+            .data-table tbody td { padding: 0.5rem 0.6rem; }
+        }
+    </style>
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Fiscalité et déclaration des revenus Airbnb à Saint-Denis : guide complet 2026",
+        "description": "Guide complet de la fiscalité Airbnb à Saint-Denis en 2026 : micro-BIC ou réel, déclaration de revenus, abattements, taxe de séjour, CFE et optimisation fiscale pour propriétaires en Seine-Saint-Denis.",
+        "author": {
+            "@type": "Organization",
+            "name": "Conciergerie Saint-Denis"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Conciergerie Saint-Denis"
+        },
+        "datePublished": "2026-06-17",
+        "dateModified": "2026-06-17",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://conciergeriesaintdenis.fr/blog/fiscalite-declaration-revenus-airbnb-saint-denis-2026/"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="navbar__logo">Conciergerie<span>SaintDenis</span></div>
+        <ul class="navbar__links">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="https://hostopia.fr/simulateur-estimer-mes-revenus">Simulateur</a></li>
+            <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+        <span class="hero__tag">Fiscalité · Saint-Denis</span>
+        <h1>Fiscalité et déclaration des revenus Airbnb à Saint-Denis en 2026</h1>
+        <p class="hero__sub">Micro-BIC ou régime réel ? Taxe de séjour, CFE, TVA, déclaration en mairie — le guide complet pour déclarer vos revenus Airbnb à Saint-Denis en toute légalité et optimiser votre fiscalité.</p>
+        <p class="hero__meta">Mis à jour le 17 juin 2026 &bull; 14 min de lecture</p>
+    </header>
+
+    <!-- ===== ARTICLE WRAPPER ===== -->
+    <div class="article-wrapper">
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" role="complementary" aria-label="Sommaire et actions">
+            <div class="sidebar__card sidebar__toc">
+                <h4>Sommaire</h4>
+                <ol>
+                    <li><a href="#regime">Micro-BIC ou régime réel : lequel choisir ?</a></li>
+                    <li><a href="#declaration">Comment déclarer ses revenus Airbnb</a></li>
+                    <li><a href="#taxe-sejour">Taxe de séjour à Saint-Denis</a></li>
+                    <li><a href="#cfe">CFE et autres taxes locales</a></li>
+                    <li><a href="#tva">TVA sur les locations saisonnières</a></li>
+                    <li><a href="#enregistrement">Déclaration en mairie de Saint-Denis</a></li>
+                    <li><a href="#optimisation">Stratégies d'optimisation fiscale</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ol>
+            </div>
+
+            <div class="sidebar__card sidebar__cta">
+                <h4>Estimez vos revenus nets</h4>
+                <p style="font-size:0.85rem;color:var(--text-m);margin-bottom:1rem;">Simulez votre rentabilité après impôts et charges en 2 minutes.</p>
+                <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn--bronze" target="_blank" rel="noopener">Lancer la simulation</a>
+                <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn--outline" target="_blank" rel="noopener">Appel découverte gratuit</a>
+            </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="article-content" role="main">
+
+            <p class="lead">La fiscalité des locations Airbnb est un sujet complexe qui fait l'objet de nombreuses erreurs. À Saint-Denis, comme partout en France, les revenus tirés de la location meublée saisonnière doivent être déclarés à l'administration fiscale, et plusieurs taxes locales s'appliquent. Ce guide vous donne toutes les clés pour être en règle tout en optimisant votre imposition, que vous louiez un studio près du Stade de France ou un T2 dans le quartier Pleyel.</p>
+
+            <!-- ===== SECTION 1 ===== -->
+            <h2 id="regime">1. Micro-BIC ou régime réel : lequel choisir pour votre Airbnb ?</h2>
+
+            <p>La première question à trancher est celle du régime fiscal. En France, les revenus de location meublée (meublé de tourisme, location saisonnière) sont imposés dans la catégorie des <strong>Bénéfices Industriels et Commerciaux (BIC)</strong>. Deux régimes s'offrent à vous.</p>
+
+            <h3>Le régime micro-BIC : la solution simplifiée</h3>
+            <p>Le micro-BIC est le régime par défaut si vos recettes annuelles ne dépassent pas certains seuils. Il offre une <strong>simplicité de déclaration</strong> appréciable : vous déclarez simplement le montant total de vos recettes, et l'administration applique un abattement automatique pour frais.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>Micro-BIC</th>
+                        <th>Régime réel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seuil de recettes 2026</td>
+                        <td>Jusqu'à 77 700 €</td>
+                        <td>Au-delà de 77 700 €</td>
+                    </tr>
+                    <tr>
+                        <td>Abattement forfaitaire</td>
+                        <td>50 % (ou 71 % pour meublés classés)</td>
+                        <td>Non (déduction des charges réelles)</td>
+                    </tr>
+                    <tr>
+                        <td>Déclaration</td>
+                        <td>Simplifiée (2042-C-PRO)</td>
+                        <td>Comptabilité complète (2031 à 2033-SD)</td>
+                    </tr>
+                    <tr>
+                        <td>Amortissement possible</td>
+                        <td>Non</td>
+                        <td>Oui (amortissement du bien et du mobilier)</td>
+                    </tr>
+                    <tr>
+                        <td>Idéal pour</td>
+                        <td>Petits revenus, un seul bien</td>
+                        <td>Plusieurs biens, fortes recettes, optimisation</td>
+                    </tr>
+                    <tr>
+                        <td>Comptable obligatoire</td>
+                        <td>Non</td>
+                        <td>Recommandé</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>L'abattement de 71 % pour meublés classés</h3>
+            <p>Si votre logement est classé <strong>meublé de tourisme</strong> (classement préfectoral 1 à 5 étoiles), l'abattement passe de 50 % à 71 % dans la limite de 188 700 € de recettes annuelles. Le classement est particulièrement intéressant pour les propriétaires à Saint-Denis car il offre également un avantage concurrentiel sur Airbnb (filtre "Logement classé"). Obtenir le classement coûte entre 100 et 250 € pour 5 ans et peut se faire en ligne.</p>
+
+            <h3>Quand opter pour le régime réel ?</h3>
+            <p>Le régime réel est plus complexe mais souvent <strong>plus avantageux</strong> si vos charges réelles (intérêts d'emprunt, charges de copropriété, taxe foncière, assurance, travaux, ménage, honoraires de conciergerie) dépassent 50 % de vos recettes. C'est fréquemment le cas à Saint-Denis où les honoraires de conciergerie (20-30 % des recettes), les frais de ménage et les charges de copropriété pèsent lourd.</p>
+
+            <div class="stat-highlight">
+                <div class="stat-highlight__number">4 200 €</div>
+                <div class="stat-highlight__label">Économie d'impôt moyenne réalisée par un propriétaire multi-bihens à Saint-Denis en passant du micro-BIC au régime réel avec amortissement (données portefeuille Hostopia 2025-2026, T2 à 25 000 € de recettes annuelles)</div>
+            </div>
+
+            <!-- ===== CTA BANNER 1 ===== -->
+            <div class="cta-banner">
+                <h3>Vous voulez savoir quel régime fiscal est le plus avantageux pour vous ?</h3>
+                <p>Simulez vos revenus nets après impôts avec notre outil gratuit — micro-BIC vs régime réel comparé.</p>
+                <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn--bronze" target="_blank" rel="noopener">Simuler ma fiscalité</a>
+                <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn--outline" target="_blank" rel="noopener">Parler à un expert-comptable</a>
+            </div>
+
+            <!-- ===== SECTION 2 ===== -->
+            <h2 id="declaration">2. Comment déclarer ses revenus Airbnb en pratique</h2>
+
+            <p>La déclaration des revenus Airbnb se fait en plusieurs étapes, que vous soyez en micro-BIC ou au régime réel.</p>
+
+            <h3>Étape 1 : Récupérez vos relevés de revenus</h3>
+            <p>Airbnb met à disposition un relevé annuel des revenus dans votre tableau de bord. Vous y trouverez le montant total des réservations, les frais de service Airbnb, et la taxe de séjour collectée pour votre compte. Téléchargez ce relevé avant la déclaration.</p>
+
+            <h3>Étape 2 : Déclarez vos revenus BIC</h3>
+            <p>Pour le micro-BIC, utilisez le formulaire <strong>2042-C-PRO</strong> et reportez le montant total de vos recettes dans la case prévue (case 5KO pour le micro-BIC classique, case 5KP pour le micro-BIC avec abattement majoré si votre logement est classé). Pour le régime réel, vous devez remplir la liasse fiscale (2031 à 2033-SD).</p>
+
+            <h3>Étape 3 : Déclarez les plus-values éventuelles</h3>
+            <p>Si vous revendez votre bien loué en Airbnb, les plus-values sont imposées différemment selon que vous releviez du micro-BIC ou du régime réel. Dans tous les cas, conservez tous les justificatifs d'achat et de travaux pendant au moins 6 ans.</p>
+
+            <h3>Calendrier des déclarations 2026</h3>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Échéance</th>
+                        <th>Déclaration</th>
+                        <th>Qui est concerné ?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mai 2026</td>
+                        <td>Déclaration des revenus 2025</td>
+                        <td>Tous les propriétaires</td>
+                    </tr>
+                    <tr>
+                        <td>Juin 2026</td>
+                        <td>Déclaration CFE (nouveaux loueurs)</td>
+                        <td>Nouveaux inscrits en 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Septembre 2026</td>
+                        <td>Taxe de séjour (reversement annuel)</td>
+                        <td>Propriétaires avec collecte manuelle</td>
+                    </tr>
+                    <tr>
+                        <td>Décembre 2026</td>
+                        <td>Déclaration CFE (tous les loueurs)</td>
+                        <td>Tous les propriétaires</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- ===== SECTION 3 ===== -->
+            <h2 id="taxe-sejour">3. Taxe de séjour à Saint-Denis en 2026</h2>
+
+            <p>La taxe de séjour est une <strong>obligation légale</strong> pour tous les loueurs en meublé de tourisme à Saint-Denis. Elle est due par les voyageurs et collectée par le propriétaire ou la plateforme.</p>
+
+            <h3>Barème applicable à Saint-Denis en 2026</h3>
+            <p>Le barème de la taxe de séjour est fixé par la commune de Saint-Denis (Seine-Saint-Denis). Pour 2026, les tarifs sont les suivants :</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Type d'hébergement</th>
+                        <th>Tarif par nuit et par personne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Meublé de tourisme non classé</td>
+                        <td>5 % du prix de la nuitée, plafonné à 2,30 €</td>
+                    </tr>
+                    <tr>
+                        <td>Meublé de tourisme classé 1-2 étoiles</td>
+                        <td>2,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Meublé de tourisme classé 3-4 étoiles</td>
+                        <td>3,00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Meublé de tourisme classé 5 étoiles</td>
+                        <td>4,00 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Collecte automatique vs manuelle</h3>
+            <p>Depuis 2024, Airbnb collecte <strong>automatiquement</strong> la taxe de séjour pour les logements situés à Saint-Denis et la reverse directement à la commune. C'est une simplification considérable : vous n'avez rien à faire si votre logement est déclaré sur Airbnb. Vérifiez dans votre tableau de bord que la collecte automatique est bien activée pour Saint-Denis.</p>
+
+            <p>Si vous utilisez d'autres plateformes (Booking, Abritel, Leboncoin) ou si vous recevez des réservations directes, vous devez collecter manuellement la taxe de séjour et la reverser à la commune via la plateforme <strong>télépaiement dédiée</strong> de Saint-Denis.</p>
+
+            <h3>Sanctions en cas de non-déclaration</h3>
+            <p>L'omission de déclaration ou de reversement de la taxe de séjour expose à une <strong>amende pouvant aller jusqu'à 1 000 €</strong>. En cas de contrôle, les services fiscaux peuvent également procéder à un rappel sur 3 ans. Ne négligez pas cette obligation.</p>
+
+            <!-- ===== CTA BANNER 2 ===== -->
+            <div class="cta-banner">
+                <h3>Besoin d'un accompagnement pour votre déclaration fiscale ?</h3>
+                <p>Notre équipe vous aide à choisir le bon régime et à préparer votre déclaration en toute sérénité.</p>
+                <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn--bronze" target="_blank" rel="noopener">Prendre rendez-vous</a>
+            </div>
+
+            <!-- ===== SECTION 4 ===== -->
+            <h2 id="cfe">4. CFE et autres taxes locales</h2>
+
+            <p>En tant que loueur en meublé, vous êtes soumis à la <strong>Cotisation Foncière des Entreprises (CFE)</strong>. Cette taxe est due même si vous êtes en micro-BIC et même si vous ne générez qu'un faible volume de réservations.</p>
+
+            <h3>Qui est concerné par la CFE ?</h3>
+            <p>La CFE concerne <strong>toute personne qui exerce une activité professionnelle non salariée</strong>, y compris la location meublée, quel que soit le montant des recettes. Vous devez vous déclarer auprès du Centre des Formalités des Entreprises (CFE) via le Guichet Unique.</p>
+
+            <p>Bon à savoir : si vos recettes annuelles sont inférieures à <strong>5 000 €</strong>, vous pouvez demander une exonération de CFE (déplafonnement) auprès de votre centre des impôts. Mais cette exonération n'est pas automatique — vous devez en faire la demande.</p>
+
+            <h3>Montant de la CFE à Saint-Denis</h3>
+            <p>Le montant de la CFE varie en fonction de la valeur locative de votre bien et du taux voté par la commune de Saint-Denis. Pour un T2 de 35 m² dans le quartier Pleyel, comptez entre <strong>200 € et 450 €</strong> par an. Une simulation précise peut être effectuée sur le site des impôts.</p>
+
+            <h3>Taxe foncière : une déduction à ne pas oublier</h3>
+            <p>Si vous êtes propriétaire du bien, vous payez la taxe foncière. Bonne nouvelle : si vous êtes au <strong>régime réel</strong>, la taxe foncière est intégralement déductible de vos revenus imposables. En micro-BIC, elle est censée être couverte par l'abattement forfaitaire.</p>
+
+            <!-- ===== SECTION 5 ===== -->
+            <h2 id="tva">5. TVA sur les locations saisonnières</h2>
+
+            <p>En principe, la location meublée saisonnière est <strong>exonérée de TVA</strong>. Cependant, si vous optez pour l'assujettissement à la TVA (ce qui peut être intéressant si vous avez des charges importantes de rénovation), vous pouvez facturer la TVA à vos clients.</p>
+
+            <p>L'option pour la TVA est intéressante dans deux cas :</p>
+            <ul>
+                <li>Vous réalisez des <strong>travaux de rénovation importants</strong> et vous voulez récupérer la TVA sur ces travaux</li>
+                <li>Vous louez via des <strong>plateformes B2B</strong> (centrale de réservation pour entreprises) qui exigent des factures avec TVA</li>
+            </ul>
+
+            <p>Si vous optez pour la TVA, vous devez facturer le <strong>taux normal de 20 %</strong> sur vos nuitées et déposer des déclarations de TVA (CA3) mensuelles ou trimestrielles. Cette option est irrévocable pendant 5 ans.</p>
+
+            <div class="stat-highlight">
+                <div class="stat-highlight__number">2 400 €</div>
+                <div class="stat-highlight__label">TVA récupérée en moyenne par un propriétaire ayant réalisé 15 000 € de travaux de rénovation dans son Airbnb à Saint-Denis en optant pour l'assujettissement à la TVA (données portefeuille Hostopia 2025)</div>
+            </div>
+
+            <!-- ===== SECTION 6 ===== -->
+            <h2 id="enregistrement">6. Déclaration en mairie de Saint-Denis</h2>
+
+            <p>Depuis la loi Le Meur de 2020, tout propriétaire qui loue un meublé de tourisme doit <strong>déclarer son logement en mairie</strong> et obtenir un numéro d'enregistrement.</p>
+
+            <h3>Comment obtenir votre numéro d'enregistrement ?</h3>
+            <p>La déclaration se fait en ligne sur le site de la mairie de Saint-Denis. Vous devrez fournir :</p>
+            <ul>
+                <li>Votre identité et justificatif de domicile</li>
+                <li>L'adresse exacte du logement</li>
+                <li>S'il s'agit de votre résidence principale ou secondaire</li>
+                <li>Le nombre de pièces et la superficie</li>
+                <li>Le cas échéant, le justificatif de classement meublé de tourisme</li>
+            </ul>
+
+            <p>Pour les résidences principales, la déclaration est gratuite. Pour les résidences secondaires, la mairie peut exiger une <strong>compensation</strong> sous forme de transformation d'un local commercial en logement ou le paiement d'une taxe.</p>
+
+            <h3>Numéro d'enregistrement obligatoire sur Airbnb</h3>
+            <p>Depuis 2021, Airbnb vous demande d'afficher votre numéro d'enregistrement sur votre annonce. Sans ce numéro, la plateforme peut <strong>bloquer les réservations</strong> ou désactiver votre annonce. Si vous louez plusieurs logements, chaque logement doit avoir son propre numéro.</p>
+
+            <!-- ===== SECTION 7 ===== -->
+            <h2 id="optimisation">7. Stratégies d'optimisation fiscale pour votre Airbnb à Saint-Denis</h2>
+
+            <p>Voici les principales stratégies légales pour optimiser votre fiscalité Airbnb :</p>
+
+            <h3>1. Faire classer son logement meublé de tourisme</h3>
+            <p>Le classement offre un abattement de <strong>71 %</strong> au lieu de 50 % en micro-BIC. Pour un T2 générant 20 000 € de recettes annuelles à Saint-Denis, cela représente un gain fiscal de près de <strong>1 200 € par an</strong>. Le classement coûte 100-250 € pour 5 ans et peut aussi améliorer votre visibilité sur Airbnb.</p>
+
+            <h3>2. Opter pour le régime réel si vos charges sont élevées</h3>
+            <p>Si vos charges (conciergerie, ménage, intérêts d'emprunt, charges de copropriété, assurance, travaux) dépassent 50 % de vos recettes, le régime réel est probablement plus avantageux. À Saint-Denis, avec des honoraires de conciergerie autour de 20-30 %, des frais de ménage fréquents et des charges de copropriété souvent élevées, le réel est souvent gagnant.</p>
+
+            <h3>3. Amortir votre bien</h3>
+            <p>En régime réel, vous pouvez amortir la valeur du bien (hors terrain) et du mobilier. C'est le principal avantage du réel : l'amortissement réduit le résultat imposable sans sortie de trésorerie. Sur un T2 de 250 000 € dans le quartier Pleyel, l'amortissement annuel peut atteindre <strong>6 000 à 8 000 €</strong>.</p>
+
+            <h3>4. Externaliser la gestion via une conciergerie</h3>
+            <p>Les honoraires de conciergerie sont <strong>déductibles</strong> en régime réel. En confiant votre logement à Conciergerie Saint-Denis, vous déduisez l'intégralité des frais de gestion, de ménage, de linge et de maintenance, ce qui réduit d'autant votre base imposable.</p>
+
+            <h3>5. Déclarer en LMNP plutôt qu'en location meublée professionnelle</h3>
+            <p>Le statut de Loueur en Meublé Non Professionnel (LMNP) est le plus adapté pour les propriétaires qui louent un ou deux logements. Il permet de bénéficier du régime réel sans être assujetti aux charges sociales (cotisations Urssaf). Le seuil à ne pas dépasser est de <strong>23 000 € de recettes</strong> ou 50 % des revenus globaux du foyer.</p>
+
+            <h3>Tableau comparatif : micro-BIC vs réel vs LMNP</h3>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>Micro-BIC (non classé)</th>
+                        <th>Micro-BIC (classé)</th>
+                        <th>Régime réel / LMNP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abattement / déduction</td>
+                        <td>50 % (forfaitaire)</td>
+                        <td>71 % (forfaitaire)</td>
+                        <td>Charges réelles + amortissement</td>
+                    </tr>
+                    <tr>
+                        <td>Imposition pour 20 000 €</td>
+                        <td>10 000 € imposables</td>
+                        <td>5 800 € imposables</td>
+                        <td>Variable (souvent 2 000-6 000 €)</td>
+                    </tr>
+                    <tr>
+                        <td>Cotisations sociales</td>
+                        <td>Non (sauf si > 23 000 €)</td>
+                        <td>Non (sauf si > 23 000 €)</td>
+                        <td>Non (sauf si pro > 23 000 €)</td>
+                    </tr>
+                    <tr>
+                        <td>Complexité</td>
+                        <td>Faible</td>
+                        <td>Faible</td>
+                        <td>Moyenne</td>
+                    </tr>
+                    <tr>
+                        <td>Recommandé si</td>
+                        <td>Revenus < 10 000 €</td>
+                        <td>Revenus 10 000-25 000 €</td>
+                        <td>Revenus > 25 000 € ou charges > 50 %</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- ===== SECTION 8 / FAQ ===== -->
+            <h2 id="faq">FAQ — Fiscalité Airbnb à Saint-Denis</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">Dois-je déclarer mes revenus Airbnb si je loue moins de 30 jours par an ?</p>
+                <p class="faq-answer">Oui. Tous les revenus issus de la location meublée doivent être déclarés, quel que soit le nombre de jours de location par an. Il n'existe pas de seuil de déclenchement pour l'impôt sur le revenu. Même une seule réservation par an génère des revenus imposables.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Quelle différence entre micro-BIC et LMNP ?</p>
+                <p class="faq-answer">Le micro-BIC est un <strong>régime fiscal</strong> basé sur un abattement forfaitaire. Le LMNP est un <strong>statut juridique</strong> qui peut être associé au micro-BIC ou au régime réel. En pratique, la plupart des propriétaires Airbnb à Saint-Denis sont en LMNP, ce qui leur permet de choisir entre micro-BIC (simplifié) et réel (optimisé).</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Puis-je déduire les frais de rénovation de mon Airbnb ?</p>
+                <p class="faq-answer">Oui, si vous êtes au <strong>régime réel</strong>. Les travaux de rénovation, d'amélioration et d'entretien sont déductibles (sauf les travaux de construction ou d'agrandissement qui sont de l'investissement). En micro-BIC, ces frais sont censés être couverts par l'abattement forfaitaire et ne peuvent pas être déduits en plus. C'est une raison supplémentaire de passer au réel si vous prévoyez des travaux importants.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Quel est le numéro SIRET nécessaire pour louer sur Airbnb ?</p>
+                <p class="faq-answer">Vous devez immatriculer votre activité de loueur en meublé auprès du <strong>Guichet Unique</strong> (formuleire en ligne sur le site de l'INPI). Vous obtiendrez un numéro SIRET que vous devrez communiquer à Airbnb et à l'administration fiscale. L'immatriculation est gratuite et prend environ une semaine.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">La taxe de séjour est-elle comprise dans les prix Airbnb ?</p>
+                <p class="faq-answer">Oui, depuis que la collecte automatique est activée à Saint-Denis. Airbnb collecte la taxe auprès du voyageur et la reverse directement à la commune. Vérifiez dans votre tableau de bord Airbnb que la collecte automatique est bien active pour votre annonce à Saint-Denis. Si vous recevez des réservations directes, vous devez collecter et reverser la taxe vous-même.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Quels sont les risques en cas de non-déclaration des revenus Airbnb ?</p>
+                <p class="faq-answer">Les risques sont réels et peuvent être lourds : redressement fiscal avec pénalités de 40 à 80 %, amende pour défaut de déclaration (jusqu'à 1 500 €), rappel de taxe de séjour avec majoration, et dans les cas graves, une amende de 10 000 € pour location sans numéro d'enregistrement. Depuis 2025, les contrôles fiscaux sur les plateformes comme Airbnb se sont intensifiés — la prudence est de mise.</p>
+            </div>
+
+            <!-- ===== CONCLUSION ===== -->
+            <h2>Prêt à optimiser votre fiscalité Airbnb à Saint-Denis ?</h2>
+
+            <p>La fiscalité des locations saisonnières est un levier puissant pour <strong>améliorer votre rentabilité nette</strong>. Que vous choisissiez le micro-BIC pour sa simplicité ou le régime réel/LMNP pour son optimisation, l'essentiel est d'être en règle et de ne pas laisser passer les déductions auxquelles vous avez droit.</p>
+
+            <p>Chez <strong>Conciergerie Saint-Denis</strong>, nous accompagnons nos clients dans le choix de leur régime fiscal, la préparation des déclarations et l'optimisation de leur imposition. Nous travaillons avec un réseau d'experts-comptables spécialisés dans la location meublée à Saint-Denis et en Seine-Saint-Denis.</p>
+
+            <p style="margin-top:2rem;">
+                <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn--bronze" target="_blank" rel="noopener">Estimer mes revenus maintenant</a>
+                <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn--outline" style="color:var(--bronze);border-color:var(--bronze);margin-left:1rem;" target="_blank" rel="noopener">Parler à un expert</a>
+            </p>
+
+        </main>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="article-footer">
+        <p>&copy; 2026 Conciergerie Saint-Denis — Tous droits réservés.</p>
+        <p style="margin-top:0.3rem;">Retrouvez tous nos articles sur <a href="/blog/">le blog Conciergerie Saint-Denis</a>.</p>
+    </footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YL60XQ455W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YL60XQ455W');</script>
+
+</body>
+</html>
