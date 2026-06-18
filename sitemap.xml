@@ -162,4 +162,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://conciergeriesaintdenis.fr/blog/location-meublee-vide-saint-denis-pleyel</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergeriesaintdenis.fr/blog/sejour-court-1-nuit-vs-long-sejour-airbnb-saint-denis</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
