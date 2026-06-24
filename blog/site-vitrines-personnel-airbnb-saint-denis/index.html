@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site vitrine ou Airbnb : pourquoi les deux sont indispensables à Saint-Denis en 2026 — Conciergerie Saint-Denis</title>
+    <meta name="description" content="Annonce Airbnb ou site vitrine personnel : les deux sont complémentaires pour maximiser vos réservations à Saint-Denis, Pleyel et au Stade de France. Guide complet 2026.">
+    <meta name="keywords" content="site vitrine Airbnb Saint-Denis, site web propriétaire location courte durée, booking direct Saint-Denis, annonce Airbnb vs site personnel, conciergerie Saint-Denis site internet, réservation directe Pleyel">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://conciergeriesaintdenis.fr/blog/site-vitrines-personnel-airbnb-saint-denis/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Site vitrine ou Airbnb : pourquoi les deux sont indispensables à Saint-Denis en 2026">
+    <meta property="og:description" content="Annonce Airbnb ou site vitrine personnel : les deux sont complémentaires pour maximiser vos réservations à Saint-Denis, Pleyel et au Stade de France. Guide complet 2026.">
+    <meta property="og:url" content="https://conciergeriesaintdenis.fr/blog/site-vitrines-personnel-airbnb-saint-denis/">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Site vitrine ou Airbnb : pourquoi les deux sont indispensables à Saint-Denis en 2026">
+    <meta name="twitter:description" content="Annonce Airbnb ou site vitrine personnel : les deux sont complémentaires pour maximiser vos réservations à Saint-Denis, Pleyel et au Stade de France.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            color: var(--text);
+            background: var(--limestone);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--bronze); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--bronze-glow); }
+        ul, ol { padding-left: 1.4rem; }
+
+        /* ===== DESIGN SYSTEM ===== */
+        :root {
+            --limestone: #F2EFE8;
+            --limestone-b: #FAFAF7;
+            --slate: #263547;
+            --slate-deep: #1B2A3A;
+            --slate-night: #0E1B28;
+            --bronze: #8C6A43;
+            --bronze-dark: #6E5232;
+            --bronze-glow: #B8926A;
+            --steel: #7B8694;
+            --text: #121212;
+            --text-m: #4A4A55;
+        }
+
+        /* ===== NAV ===== */
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            background: var(--slate);
+            z-index: 1000;
+            padding: 0.8rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+        }
+        .navbar__logo {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--limestone);
+            letter-spacing: 0.02em;
+        }
+        .navbar__logo span { color: var(--bronze-glow); }
+        .navbar__links { display: flex; gap: 1.5rem; list-style: none; }
+        .navbar__links a {
+            color: var(--limestone-b);
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+        .navbar__links a:hover { opacity: 1; color: var(--bronze-glow); }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: var(--slate-deep);
+            background-image: radial-gradient(ellipse at 20% 50%, rgba(140,106,67,0.15) 0%, transparent 60%),
+                              radial-gradient(ellipse at 80% 30%, rgba(183,146,106,0.10) 0%, transparent 50%);
+            padding: 7rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        }
+        .hero__tag {
+            display: inline-block;
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--bronze-glow);
+            background: rgba(140,106,67,0.18);
+            padding: 0.35rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+            color: var(--limestone-b);
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            line-height: 1.15;
+        }
+        .hero__sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--steel);
+            max-width: 620px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .hero__meta {
+            font-size: 0.8rem;
+            color: var(--steel);
+            opacity: 0.7;
+        }
+
+        /* ===== LAYOUT ===== */
+        .article-wrapper {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+            display: flex;
+            gap: 2.5rem;
+        }
+        .article-content {
+            flex: 1;
+            min-width: 0;
+        }
+        .article-content h2 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+            color: var(--slate-night);
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.25;
+        }
+        .article-content h3 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--slate-deep);
+            margin-top: 2rem;
+            margin-bottom: 0.7rem;
+        }
+        .article-content p {
+            margin-bottom: 1.1rem;
+            color: var(--text);
+        }
+        .article-content p.lead {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-m);
+            line-height: 1.8;
+            border-left: 3px solid var(--bronze);
+            padding-left: 1.2rem;
+            margin-bottom: 1.8rem;
+        }
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 1.3rem;
+            color: var(--text);
+        }
+        .article-content li { margin-bottom: 0.4rem; }
+        .article-content strong { color: var(--slate-night); }
+
+        /* ===== STAT HIGHLIGHT ===== */
+        .stat-highlight {
+            border-left: 3px solid var(--bronze);
+            background: var(--limestone-b);
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .stat-highlight__number {
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            font-size: 2rem;
+            color: var(--bronze-dark);
+            line-height: 1;
+        }
+        .stat-highlight__label {
+            font-size: 0.9rem;
+            color: var(--text-m);
+            margin-top: 0.25rem;
+        }
+        .stat-highlight p { margin-bottom: 0.3rem; }
+
+        /* ===== TABLE ===== */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.8rem 0;
+            font-size: 0.9rem;
+        }
+        .data-table thead th {
+            background: var(--slate);
+            color: var(--limestone-b);
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+        .data-table tbody td {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid #ddd;
+            color: var(--text);
+        }
+        .data-table tbody tr:nth-child(even) { background: var(--limestone-b); }
+        .data-table tbody tr:hover { background: rgba(140,106,67,0.06); }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 6rem;
+            align-self: start;
+        }
+        .sidebar__card {
+            background: var(--limestone-b);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+        .sidebar__card h4 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--slate-night);
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bronze);
+        }
+        .sidebar__toc ol {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar__toc li {
+            margin-bottom: 0.5rem;
+            font-size: 0.88rem;
+        }
+        .sidebar__toc a {
+            color: var(--text-m);
+            display: block;
+            padding: 0.35rem 0.5rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .sidebar__toc a:hover {
+            background: rgba(140,106,67,0.08);
+            color: var(--bronze-dark);
+            padding-left: 0.8rem;
+        }
+        .sidebar__cta .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0.7rem;
+        }
+        .sidebar__cta .btn--outline {
+            color: var(--bronze);
+            border-color: var(--bronze);
+        }
+        .sidebar__cta .btn--outline:hover {
+            color: var(--limestone-b);
+        }
+
+        /* ===== INFO BOX ===== */
+        .info-box {
+            background: var(--limestone-b);
+            border: 1px solid rgba(140,106,67,0.2);
+            border-radius: 10px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0;
+        }
+        .info-box h4 {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--bronze-dark);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .info-box h4::before {
+            content: '\2605';
+            color: var(--bronze);
+            font-size: 1rem;
+        }
+        .info-box p {
+            font-size: 0.9rem;
+            color: var(--text-m);
+            margin-bottom: 0;
+        }
+
+        /* ===== CHECKLIST ===== */
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        .checklist li {
+            padding: 0.5rem 0 0.5rem 1.8rem;
+            position: relative;
+            margin-bottom: 0.3rem;
+        }
+        .checklist li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: var(--bronze);
+            font-weight: 700;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-item {
+            border-bottom: 1px solid #e0ddd6;
+            padding: 1.2rem 0;
+        }
+        .faq-item:first-child { padding-top: 0; }
+        .faq-question {
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--slate-deep);
+            cursor: default;
+            margin-bottom: 0.3rem;
+        }
+        .faq-answer {
+            color: var(--text-m);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ===== FOOTER ===== */
+        .article-footer {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+            border-top: 1px solid #e0ddd6;
+            text-align: center;
+        }
+        .article-footer p {
+            font-size: 0.85rem;
+            color: var(--steel);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 860px) {
+            .article-wrapper { flex-direction: column; }
+            .sidebar {
+                width: 100%;
+                position: static;
+                order: -1;
+            }
+            .navbar__links { display: none; }
+        }
+        @media (max-width: 540px) {
+            .hero { padding: 6rem 1.2rem 3rem; }
+            .article-wrapper { padding: 1.5rem 1rem 3rem; }
+            .data-table { font-size: 0.8rem; }
+            .data-table thead th,
+            .data-table tbody td { padding: 0.5rem 0.6rem; }
+        }
+    </style>
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Site vitrine ou Airbnb : pourquoi les deux sont indispensables à Saint-Denis en 2026",
+        "description": "Annonce Airbnb ou site vitrine personnel : les deux sont complémentaires pour maximiser vos réservations à Saint-Denis, Pleyel et au Stade de France. Guide complet 2026 avec coûts, bénéfices et exemples concrets.",
+        "author": {
+            "@type": "Organization",
+            "name": "Conciergerie Saint-Denis"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Conciergerie Saint-Denis"
+        },
+        "datePublished": "2026-06-24",
+        "dateModified": "2026-06-24",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://conciergeriesaintdenis.fr/blog/site-vitrines-personnel-airbnb-saint-denis/"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="navbar__logo">Conciergerie<span>SaintDenis</span></div>
+        <ul class="navbar__links">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="https://hostopia.fr/simulateur-estimer-mes-revenus">Simulateur</a></li>
+            <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+        <span class="hero__tag">Stratégie · Saint-Denis</span>
+        <h1>Site vitrine ou annonce Airbnb : pourquoi les deux sont indispensables à Saint-Denis</h1>
+        <p class="hero__sub">De la commission aux réservations directes, tout ce qui change quand on ajoute un site personnel à son annonce Airbnb à Saint-Denis, Pleyel et Stade de France.</p>
+        <p class="hero__meta">Mis à jour le 24 juin 2026 &bull; 6 min de lecture</p>
+    </header>
+
+    <!-- ===== ARTICLE WRAPPER ===== -->
+    <div class="article-wrapper">
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" role="complementary" aria-label="Sommaire et actions">
+            <div class="sidebar__card sidebar__toc">
+                <h4>Sommaire</h4>
+                <ol>
+                    <li><a href="#pourquoi">Pourquoi un site personnel change tout</a></li>
+                    <li><a href="#comparatif">Comparatif Airbnb vs site dédié</a></li>
+                    <li><a href="#booking-direct">Booking direct : comment ça marche</a></li>
+                    <li><a href="#contenu">Le site comme vitrine durable</a></li>
+                    <li><a href="#mise-en-place">Comment créer le vôtre simplement</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ol>
+            </div>
+
+            <div class="sidebar__card sidebar__cta">
+                <h4>Besoin d'un coup de main ?</h4>
+                <p style="font-size:0.85rem;color:var(--text-m);margin-bottom:1rem;">On gère votre site vitrine, votre annonce Airbnb et votre calendrier. Un seul interlocuteur à Saint-Denis.</p>
+                <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn btn--bronze" target="_blank" rel="noopener">Estimer mes revenus</a>
+                <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn btn--outline" target="_blank" rel="noopener">Appel offert</a>
+            </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="article-content" role="main">
+
+            <p class="lead">Vous avez une annonce Airbnb bien notée à Saint-Denis, près de Pleyel ou du Stade de France. Une question revient souvent : <strong>et si j'avais aussi mon propre site ?</strong> Les propriétaires qui cumulent annonce + site vitrine génèrent en moyenne <strong>25 à 40 % de revenus supplémentaires</strong> grâce aux réservations directes. Voici pourquoi.</p>
+
+            <!-- ===== SECTION 1 ===== -->
+            <h2 id="pourquoi">Pourquoi un site personnel change la donne à Saint-Denis</h2>
+
+            <p>Airbnb est un formidable canal d'acquisition : visibilité, paiement sécurisé, assurance. Mais en 2026, les frais de service pour les hôtes vont de 14 à 16 % — sans compter la TVA. Sur une réservation de 150 €/nuit pour 3 nuits, cela représente <strong>63 à 72 € prélevés</strong>.</p>
+
+            <p>À Saint-Denis, où la demande est portée par le Stade de France (80+ dates/an) et le quartier Pleyel avec le Grand Paris Express, un site vitrine vous permet de :</p>
+
+            <ul>
+                <li><strong>Récupérer des réservations sans commission</strong> — vos anciens clients reviennent directement sur votre site.</li>
+                <li><strong>Créer une identité de marque</strong> — votre logement devient « Le Loft Pleyel » plutôt qu'une annonce parmi 500.</li>
+                <li><strong>Multiplier vos canaux</strong> — vous n'êtes plus dépendant d'un seul algorithme.</li>
+                <li><strong>Améliorer votre référencement local</strong> — un site bien optimisé apparaît dans Google pour <em>« location Saint-Denis Stade de France »</em> ou <em>« appartement Pleyel »</em>.</li>
+            </ul>
+
+            <div class="stat-highlight">
+                <div class="stat-highlight__number">38 %</div>
+                <div class="stat-highlight__label">Part moyenne de réservations directes obtenue par les hôtes avec site vitrine + annonce Airbnb (Skift Research 2025). À Saint-Denis, ce taux grimpe à 50 % près du Stade de France.</div>
+            </div>
+
+            <!-- ===== SECTION 2 ===== -->
+            <h2 id="comparatif">Comparatif : Airbnb seul vs Airbnb + site dédié</h2>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>Airbnb uniquement</th>
+                        <th>Airbnb + site vitrine</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Commission par réservation</td>
+                        <td>14–16 %</td>
+                        <td>0 % sur le booking direct</td>
+                    </tr>
+                    <tr>
+                        <td>Visibilité Google</td>
+                        <td>Limitée à Airbnb</td>
+                        <td>SEO local + fiche GBP</td>
+                    </tr>
+                    <tr>
+                        <td>Relation client</td>
+                        <td>Via Airbnb Messages</td>
+                        <td>Directe (email, téléphone)</td>
+                    </tr>
+                    <tr>
+                        <td>Contrôle des prix</td>
+                        <td>Algorithme Airbnb</td>
+                        <td>Total sur le site</td>
+                    </tr>
+                    <tr>
+                        <td>Fidélisation</td>
+                        <td>Faible (1 avis, puis au revoir)</td>
+                        <td>Base clients, newsletter</td>
+                    </tr>
+                    <tr>
+                        <td>Coût fixe mensuel</td>
+                        <td>0 €</td>
+                        <td>10–30 € (hébergement + domaine)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>L'idée n'est pas de quitter Airbnb — ce serait une erreur. La plateforme reste votre meilleur moteur de <em>découverte</em>. Mais <strong>le site vitrine devient votre canal de rentabilité</strong>, celui sur lequel vous gardez la totalité du prix.</p>
+
+            <!-- ===== SECTION 3 ===== -->
+            <h2 id="booking-direct">Le booking direct : comment ça marche concrètement</h2>
+
+            <p>Le principe est simple : un voyageur trouve votre logement sur Airbnb, réserve, adore son séjour. La prochaine fois qu'il vient pour un match au Stade de France ou un déplacement à Pleyel, il tape votre URL directement. Il réserve sans passer par la plateforme, vous économisez 15 % de commission, et vous pouvez même offrir un tarif préférentiel aux clients réguliers.</p>
+
+            <div class="info-box">
+                <h4>Cas concret à Saint-Denis</h4>
+                <p>Un T2 proche de la Basilique génère 18 réservations/an. À 120 €/nuit et 3 nuits en moyenne = 6 480 € de CA. Avec 15 % de commission Airbnb, vous perdez 972 €/an. Si 30 % passent en direct (6 réservations), vous économisez 324 € — soit le coût d'un domaine et d'un hébergement pour 2 ans.</p>
+            </div>
+
+            <p>Pour mettre en place le booking direct :</p>
+
+            <ul>
+                <li><strong>Installez un calendrier synchronisé</strong> (iCal) entre votre site et Airbnb. Des solutions comme Lodgify ou Guesty le font automatiquement.</li>
+                <li><strong>Proposez un paiement sécurisé</strong> — Stripe ou PayPal. Le voyageur paie en ligne, les fonds sont bloqués jusqu'à son arrivée.</li>
+                <li><strong>Ajoutez une clause de remboursement</strong> — identique à celle d'Airbnb pour rassurer le client.</li>
+                <li><strong>Incitez au direct</strong> — glissez une carte de visite dans le logement avec l'URL de votre site et un code promo « -10 % sur la prochaine réservation directe ».</li>
+            </ul>
+
+            <!-- ===== SECTION 4 ===== -->
+            <h2 id="contenu">Le site comme vitrine locale durable</h2>
+
+            <p>Au-delà des réservations directes, un site vitrine est un <strong>actif SEO durable</strong> qui travaille 24h/24. Chaque page — présentation du logement, guide du quartier, événements du Stade de France — est une opportunité d'apparaître dans Google.</p>
+
+            <p>Voici les pages essentielles d'un site vitrine de location saisonnière à Saint-Denis :</p>
+
+            <ul class="checklist">
+                <li><strong>Page d'accueil</strong> — photos, localisation Stade de France/Pleyel.</li>
+                <li><strong>Page de réservation</strong> — calendrier temps réel, tarifs, paiement sécurisé.</li>
+                <li><strong>Page « Le quartier »</strong> — commerces, transports, Basilique, restaurants.</li>
+                <li><strong>Page « Événements »</strong> — matchs et concerts à venir. Très fort pour le SEO.</li>
+                <li><strong>Blog</strong> — renforce votre autorité et votre référencement.</li>
+                <li><strong>Témoignages</strong> — les avis de vos voyageurs.</li>
+            </ul>
+
+            <div class="info-box">
+                <h4>Maillage gagnant</h4>
+                <p>Chaque article est relié aux autres. Consultez notre <a href="/blog/seo-local-airbnb-saint-denis-referencement/">guide SEO local</a> ou le <a href="/blog/conciergerie-airbnb-saint-denis-prix-avantages/">comparatif des conciergeries</a>. Ce maillage construit l'autorité de votre site aux yeux de Google.</p>
+            </div>
+
+            <!-- ===== SECTION 5 ===== -->
+            <h2 id="mise-en-place">Comment créer votre site simplement</h2>
+
+            <p>Pas besoin d'être développeur. Voici les options adaptées à un propriétaire à Saint-Denis :</p>
+
+            <h3>Solution clé en main</h3>
+            <p>Des plateformes comme Lodgify ou Uplisting créent un site vitrine avec calendrier synchronisé et paiement intégré en quelques heures. Comptez 20 à 40 €/mois.</p>
+
+            <h3>Site statique + outil de réservation</h3>
+            <p>Vous créez un site simple avec Stripe ou Calendly. Coût : 0 à 15 €/mois. Idéal si vous avez du temps ou une conciergerie qui s'en occupe.</p>
+
+            <h3>Faites-vous accompagner</h3>
+            <p>Si vous gérez plusieurs logements, une conciergerie locale peut créer et maintenir votre site. C'est souvent inclus dans les forfaits de gestion.</p>
+
+            <!-- ===== FAQ ===== -->
+            <h2 id="faq">FAQ — Site vitrine et Airbnb à Saint-Denis</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Puis-je avoir un site vitrine sans violer les conditions d'Airbnb ?</div>
+                <div class="faq-answer">Oui, Airbnb autorise les hôtes à avoir leur propre site. Ce qui est interdit : rediriger un voyageur <em>pendant une conversation</em> avant réservation. Après, vous pouvez communiquer votre site. Meilleure pratique : carte de visite dans le logement ou lien dans l'email de bienvenue.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Combien coûte un site vitrine pour un logement à Saint-Denis ?</div>
+                <div class="faq-answer">Comptez 10 à 15 €/mois pour un site fait maison (domaine ~12 €/an + hébergement ~8 €/mois), et 20 à 40 €/mois pour une solution clé en main. Soit l'équivalent d'une seule commission Airbnb économisée dans l'année.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Faut-il supprimer mon annonce Airbnb si j'ai un site ?</div>
+                <div class="faq-answer">Non, surtout pas. Les deux sont complémentaires. Airbnb apporte la visibilité et les premiers clients. Votre site transforme ces clients en revenus directs récurrents. Synchronisez simplement vos calendriers avec iCal.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Quel est le meilleur moment pour créer son site ?</div>
+                <div class="faq-answer">Dès que vous avez 5 à 10 avis positifs sur Airbnb. C'est le signe que votre logement est rodé. Lancez votre site et commencez à collecter des emails — dans 6 mois, vous aurez une base de clients réguliers.</div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="article-footer">
+        <p>&copy; 2026 Conciergerie Saint-Denis — Hostopia. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

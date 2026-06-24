@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://conciergeriesaintdenis.fr/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,9 +14,15 @@
   </url>
   <url>
     <loc>https://conciergeriesaintdenis.fr/blog</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://conciergeriesaintdenis.fr/blog/site-vitrines-personnel-airbnb-saint-denis</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://conciergeriesaintdenis.fr/blog/combien-rapporte-airbnb-saint-denis</loc>
@@ -195,6 +201,12 @@
   <url>
     <loc>https://conciergeriesaintdenis.fr/blog/tendances-marche-airbnb-saint-denis-2026</loc>
     <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergeriesaintdenis.fr/blog/avis-reputation-airbnb-saint-denis-guide</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
