@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQGV0QT03Z"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-FQGV0QT03Z');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check-out autonome Airbnb Saint-Denis : guide complet pour propriétaires 2026 — Hostopia</title>
+  <meta name="description" content="Comment organiser un check-out autonome parfait pour votre Airbnb à Saint-Denis : checklist départ, ménage, consignes voyageurs, optimisation des rotations Stade de France et Pleyel.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://conciergeriesaintdenis.fr/blog/check-out-autonome-airbnb-saint-denis">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Inter',sans-serif; font-weight:300; color:#121212; background:#F2EFE8; overflow-x:hidden; }
+
+    :root {
+      --limestone:#F2EFE8; --limestone-b:#FAFAF7;
+      --slate:#263547; --slate-deep:#1B2A3A; --slate-night:#0E1B28;
+      --bronze:#8C6A43; --bronze-dark:#6E5232; --bronze-glow:#B8926A;
+      --steel:#7B8694; --text:#121212; --text-m:#4A4A55;
+    }
+
+    h1,h2,h3 { font-family:'Sora',sans-serif; letter-spacing:-.02em; }
+
+    .reveal { opacity:0; transform:translateY(22px); transition:opacity .65s cubic-bezier(.22,1,.36,1), transform .65s cubic-bezier(.22,1,.36,1); }
+    .reveal.visible { opacity:1; transform:none; }
+    .d1{transition-delay:.08s;} .d2{transition-delay:.16s;} .d3{transition-delay:.24s;}
+
+    .vitrail-bg { position:relative; }
+    .vitrail-bg::before { content:''; position:absolute; inset:0; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%238C6A43' stroke-width='0.5'%3E%3Cpolygon points='36,4 68,20 68,52 36,68 4,52 4,20' opacity='0.5'/%3E%3Cpolygon points='36,16 56,26 56,46 36,56 16,46 16,26' opacity='0.35'/%3E%3Cline x1='36' y1='4' x2='36' y2='68' opacity='0.3'/%3E%3Cline x1='4' y1='36' x2='68' y2='36' opacity='0.3'/%3E%3C/g%3E%3C/svg%3E"); opacity:.025; pointer-events:none; z-index:0; }
+    .vitrail-bg > * { position:relative; z-index:1; }
+
+    .grid-bg { position:relative; }
+    .grid-bg::before { content:''; position:absolute; inset:0; background-image:linear-gradient(rgba(123,134,148,.07) 1px,transparent 1px), linear-gradient(90deg,rgba(123,134,148,.07) 1px,transparent 1px); background-size:64px 64px; pointer-events:none; z-index:0; }
+    .grid-bg > * { position:relative; z-index:1; }
+
+    nav { position:fixed; top:0; left:0; right:0; z-index:200; background:var(--slate); padding:0 48px; height:64px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(140,106,67,.2); }
+    .nav-logo { font-family:'Sora',sans-serif; font-weight:700; font-size:1rem; color:#fff; text-decoration:none; }
+    .nav-logo em { color:var(--bronze); font-style:normal; }
+    .nav-links { display:flex; gap:28px; list-style:none; align-items:center; }
+    .nav-links a { color:rgba(255,255,255,.7); text-decoration:none; font-size:.84rem; font-weight:400; letter-spacing:.04em; transition:color .2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--bronze-glow); }
+    .nav-cta { background:var(--bronze)!important; color:#fff!important; padding:9px 22px; border-radius:6px; font-weight:600!important; font-family:'Sora',sans-serif; }
+    .nav-cta:hover { background:var(--bronze-dark)!important; }
+
+    .wa-float { position:fixed; bottom:28px; right:28px; z-index:999; background:#25D366; color:#fff; width:56px; height:56px; border-radius:28px; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow:0 4px 20px rgba(37,211,102,.4); transition:transform .25s, width .3s, padding .3s; overflow:hidden; white-space:nowrap; }
+    .wa-float svg { width:26px; height:26px; flex-shrink:0; }
+    .wa-label { display:none; font-size:.82rem; font-weight:500; margin-left:10px; margin-right:4px; }
+    .wa-float:hover { transform:scale(1.04); width:auto; padding:0 18px 0 14px; }
+    .wa-float:hover .wa-label { display:inline; }
+
+    .article-hero { background:var(--slate-night); padding:130px 24px 80px; position:relative; overflow:hidden; }
+    .article-hero::after { content:''; position:absolute; bottom:-1px; left:0; right:0; height:56px; background:var(--limestone); clip-path:polygon(0 56px, 40% 0, 50% 44px, 60% 0, 100% 56px, 100% 56px, 0 56px); }
+    .article-hero .container { max-width:740px; margin:0 auto; }
+    .article-badge { display:inline-block; background:rgba(140,106,67,.14); border:1px solid rgba(140,106,67,.4); color:var(--bronze-glow); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; padding:7px 18px; border-radius:4px; margin-bottom:24px; }
+    .article-hero h1 { font-family:'Sora',sans-serif; font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:800; color:#fff; line-height:1.15; margin-bottom:18px; letter-spacing:-.03em; }
+    .article-hero h1 em { color:var(--bronze); font-style:normal; }
+    .article-meta { display:flex; gap:20px; align-items:center; font-size:.82rem; color:rgba(255,255,255,.5); flex-wrap:wrap; }
+    .article-meta span { display:flex; align-items:center; gap:6px; }
+
+    .article-body { max-width:740px; margin:0 auto; padding:56px 24px 80px; }
+    .article-body h2 { font-family:'Sora',sans-serif; font-size:1.5rem; font-weight:700; color:var(--slate); margin:48px 0 16px; line-height:1.3; }
+    .article-body h2:first-child { margin-top:0; }
+    .article-body h3 { font-family:'Sora',sans-serif; font-size:1.15rem; font-weight:600; color:var(--slate-deep); margin:32px 0 12px; }
+    .article-body p { font-size:.95rem; line-height:1.85; color:var(--text); margin-bottom:20px; }
+    .article-body ul, .article-body ol { margin:0 0 24px 24px; }
+    .article-body li { font-size:.95rem; line-height:1.85; color:var(--text); margin-bottom:8px; }
+    .article-body strong { font-weight:600; color:var(--slate-deep); }
+    .article-body a { color:var(--bronze); text-decoration:underline; text-underline-offset:2px; transition:color .2s; }
+    .article-body a:hover { color:var(--bronze-dark); }
+
+    .highlight-box { background:rgba(140,106,67,.07); border-left:3px solid var(--bronze); padding:20px 24px; margin:28px 0; border-radius:0 8px 8px 0; }
+    .highlight-box p:last-child { margin-bottom:0; }
+
+    .warning-box { background:rgba(219,68,55,.05); border-left:3px solid #DB4437; padding:20px 24px; margin:28px 0; border-radius:0 8px 8px 0; }
+    .warning-box p:last-child { margin-bottom:0; }
+    .warning-box strong { color:#DB4437; }
+
+    .check-box { background:rgba(52,168,83,.05); border-left:3px solid #34A853; padding:20px 24px; margin:28px 0; border-radius:0 8px 8px 0; }
+    .check-box p:last-child { margin-bottom:0; }
+
+    .cta-section { background:var(--slate); padding:56px 24px; text-align:center; }
+    .cta-section h2 { font-family:'Sora',sans-serif; font-size:clamp(1.5rem,2.5vw,2rem); font-weight:800; color:#fff; margin-bottom:14px; }
+    .cta-section h2 em { color:var(--bronze); font-style:normal; }
+    .cta-section p { color:rgba(255,255,255,.58); font-size:.88rem; margin-bottom:32px; max-width:520px; margin-left:auto; margin-right:auto; }
+    .cta-buttons { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    .btn-bronze { background:var(--bronze); color:#fff; text-decoration:none; padding:14px 32px; font-family:'Sora',sans-serif; font-size:.87rem; font-weight:600; letter-spacing:.04em; border-radius:6px; transition:background .25s, transform .2s; display:inline-block; }
+    .btn-bronze:hover { background:var(--bronze-dark); transform:translateY(-2px); }
+    .btn-outline { border:2px solid rgba(140,106,67,.5); color:var(--bronze-glow); text-decoration:none; padding:14px 32px; font-family:'Sora',sans-serif; font-size:.87rem; font-weight:600; letter-spacing:.04em; border-radius:6px; transition:background .25s, border-color .25s; display:inline-block; }
+    .btn-outline:hover { background:rgba(140,106,67,.1); border-color:var(--bronze); }
+    .btn-green { background:#25D366; color:#fff; text-decoration:none; padding:14px 32px; font-family:'Sora',sans-serif; font-size:.87rem; font-weight:600; letter-spacing:.04em; border-radius:6px; transition:background .25s, transform .2s; display:inline-block; }
+    .btn-green:hover { background:#1da851; transform:translateY(-2px); }
+
+    footer { background:var(--slate-night); padding:44px 24px; text-align:center; border-top:1px solid rgba(140,106,67,.1); }
+    .footer-logo { font-family:'Sora',sans-serif; font-weight:700; font-size:1rem; color:rgba(255,255,255,.4); margin-bottom:14px; }
+    .footer-logo em { color:var(--bronze); font-style:normal; }
+    .footer-links { display:flex; gap:24px; justify-content:center; margin-bottom:20px; flex-wrap:wrap; }
+    .footer-links a { color:rgba(255,255,255,.3); text-decoration:none; font-size:.77rem; transition:color .2s; }
+    .footer-links a:hover { color:rgba(255,255,255,.7); }
+    .footer-copy { font-size:.7rem; color:rgba(255,255,255,.18); }
+
+    @media (max-width:860px) {
+      nav { padding:0 20px; } .nav-links { display:none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Comment organiser un check-out autonome pour mon Airbnb à Saint-Denis ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pour un check-out autonome réussi, définissez une heure limite (généralement 10h-11h), envoyez automatiquement les consignes de départ la veille via les messages programmés Airbnb, installez une boîte à clés ou serrure connectée pour le dépôt des clés, et fournissez une checklist claire : laver la vaisselle, sortir les poubelles, ranger le linge de maison au même endroit. Pour les propriétaires près du Stade de France, prévoyez des horaires flexibles les soirs de match."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quels équipements faciliter le check-out autonome pour les voyageurs ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Une boîte à clés sécurisée ou serrure connectée (Nuki, Lockly), un livret d'accueil imprimé avec les consignes de départ, des poubelles clairement identifiées (tri sélectif), un aspirateur ou balai à disposition, et des étiquettes pour le linge sale. Pour les voyageurs d'affaires à Pleyel, ajoutez un petit espace pour déposer les badges ou cartes d'accès."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps faut-il pour préparer un check-out express entre deux réservations à Saint-Denis ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un check-out autonome bien organisé libère le logement en 5 à 10 minutes pour le voyageur, puis l'équipe de ménage peut effectuer la rotation complète (nettoyage + contrôle) en 1h30 à 2h. C'est suffisant pour un check-in à 15h si le départ est à 11h. Pour les jours de match et les rotations Stade de France, prévoyez une équipe de backup disponible en urgence."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Conciergerie <em>Saint-Denis</em></a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="nav-cta" target="_blank" rel="noopener">Prendre rendez-vous</a></li>
+  </ul>
+</nav>
+
+<section class="article-hero">
+  <div class="container">
+    <div class="article-badge">Check-out autonome · Départ · Ménage</div>
+    <h1 class="reveal">Check-out autonome Airbnb à Saint-Denis : guide complet pour des <em>départs sans stress</em></h1>
+    <div class="article-meta reveal d1">
+      <span>Par l'équipe Hostopia</span>
+      <span>·</span>
+      <span>Juillet 2026</span>
+      <span>·</span>
+      <span>6 min de lecture</span>
+    </div>
+  </div>
+</section>
+
+<article class="article-body">
+
+  <p class="reveal"><strong>« On a adoré votre logement, mais on n'a pas trouvé où déposer les clés. »</strong> — ce type de message, des dizaines de propriétaires le reçoivent chaque mois. Un check-out mal préparé, c'est une note dégradée, un stress inutile pour le voyageur, et surtout une rotation qui traîne.</p>
+
+  <p class="reveal d1">À Saint-Denis, où les réservations s'enchaînent entre spectateurs du Stade de France, voyageurs d'affaires de Pleyel et familles de passage, le <strong>check-out autonome</strong> n'est pas une option : c'est un passage obligé pour maintenir un taux d'occupation élevé et des avis 5 étoiles. Dans ce guide, on vous explique tout pour qu'un départ soit aussi fluide qu'une arrivée.</p>
+
+  <h2>Pourquoi le check-out autonome est indispensable à Saint-Denis</h2>
+
+  <h3>Les rotations express post-événement Stade de France</h3>
+  <p>Les soirs de match ou de concert, vous pouvez avoir un départ le lendemain matin et une arrivée l'après-midi. Sans check-out autonome, vous dépendez de la disponibilité du voyageur pour libérer les lieux, ce qui retarde toute la rotation. Un processus standardisé vous permet de <strong>gagner 2 à 3 heures</strong> sur chaque transition.</p>
+
+  <h3>La clientèle corporate de Pleyel part tôt</h3>
+  <p>Les voyageurs d'affaires quittent souvent le logement avant 7h pour prendre un train ou un avion. Ils n'ont pas le temps d'attendre un état des lieux de sortie en personne. Un check-out conçu pour eux — consignes claires, dépôt de clés facilité — garantit un départ silencieux et efficace.</p>
+
+  <div class="highlight-box">
+    <p><strong>Chiffre clé :</strong> Selon notre analyse des réservations Airbnb à Saint-Denis, 72 % des voyageurs préfèrent un check-out autonome à un départ en présence du propriétaire. Les logements équipés d'une boîte à clés ou serrure connectée reçoivent en moyenne 0,3 point d'étoile supplémentaire sur la catégorie « Arrivée ».</p>
+  </div>
+
+  <h2>Les 5 règles d'or d'un check-out autonome réussi</h2>
+
+  <h3>1. Des consignes écrites, claires et répétées</h3>
+  <p>Ne comptez pas sur la mémoire de vos voyageurs. Envoyez les consignes de départ <strong>la veille du départ par message Airbnb</strong> (programmé automatiquement), et imprimez-les dans le livret d'accueil. Incluez :</p>
+  <ul>
+    <li>L'heure limite de départ (ex : 10h ou 11h)</li>
+    <li>Où déposer les clés (photo à l'appui)</li>
+    <li>Que faire du linge de maison (panier à linge sale indiqué)</li>
+    <li>Les consignes de tri sélectif (Saint-Denis collecte le verre, les emballages et les ordures ménagères séparément)</li>
+    <li>Où laisser les avis (lien direct vers votre annonce Airbnb)</li>
+  </ul>
+
+  <h3>2. Une boîte à clés ou serrure connectée fiable</h3>
+  <p>Le dépôt des clés est le point critique. Deux solutions : la <strong>boîte à clés à code</strong> (20 à 50 €, installation en 10 minutes) ou la <strong>serrure connectée</strong> type Nuki ou Lockly (200 à 350 €, gestion des codes à distance). La serrure connectée permet de générer un code temporaire qui expire automatiquement à l'heure de départ — fini les clés oubliées.</p>
+
+  <p>Consultez notre guide <a href="/blog/check-in-autonome-serrure-connectee-airbnb-saint-denis">check-in autonome et serrure connectée Airbnb Saint-Denis</a> pour les modèles recommandés et l'installation.</p>
+
+  <h3>3. Préparez le logement pour le ménage express</h3>
+  <p>Un bon check-out autonome, c'est aussi un logement qui se nettoie vite. Demandez aux voyageurs de :</p>
+  <ul>
+    <li>Regrouper le linge sale dans le panier prévu</li>
+    <li>Laver la vaisselle ou la mettre au lave-vaisselle</li>
+    <li>Sortir les poubelles (précisez les jours de collecte Saint-Denis)</li>
+    <li>Éteindre les lumières et le chauffage/climatisation</li>
+  </ul>
+
+  <div class="check-box">
+    <p><strong>Astuce Hostopia :</strong> Prévoyez un « kit de rotation » dans un placard fermé à clé : un jeu de draps et serviettes propres de rechange, des produits d'entretien, des sacs poubelle. Votre équipe de ménage gagnera 20 minutes par rotation.</p>
+  </div>
+
+  <h3>4. Automatisez la communication</h3>
+  <p>Utilisez les <strong>messages programmés Airbnb</strong> (ou un outil comme Hospitable, iGMS, Hostaway) pour envoyer automatiquement :</p>
+  <ul>
+    <li>J-1 avant le départ : rappel des consignes, heure limite, code de sortie</li>
+    <li>Jour du départ à l'heure limite : message de remerciement + demande d'avis</li>
+    <li>30 min après le départ : notification à votre équipe de ménage que le logement est libre</li>
+  </ul>
+
+  <h3>5. Un état des lieux de sortie simplifié</h3>
+  <p>Pas besoin de faire un inventaire complet en présence du voyageur. Prenez <strong>5 à 10 photos</strong> après le départ (avant le ménage) et conservez-les 14 jours en cas de litige. Pour les dégradations, Airbnb couvre jusqu'à 1 M$ via la garantie dommages — mais il faut pouvoir prouver l'état initial.</p>
+
+  <p>Découvrez aussi notre guide sur <a href="/blog/gerer-conflits-litiges-airbnb-saint-denis-guide">la gestion des conflits et litiges Airbnb à Saint-Denis</a> pour savoir quoi faire en cas de problème.</p>
+
+  <h2>Adapter le check-out autonome selon votre type de clientèle</h2>
+
+  <h3>Pour les voyageurs du Stade de France</h3>
+  <p>Départs souvent tardifs (le voyageur veut profiter du match ou du concert jusqu'au bout). Prévoyez une <strong>heure de départ flexible jusqu'à 12h</strong> les jours de match, et une boîte à clés extérieure accessible même tard. Indiquez clairement les consignes de tri : les soirées match génèrent beaucoup de canettes et d'emballages.</p>
+
+  <h3>Pour les voyageurs d'affaires de Pleyel</h3>
+  <p>Ces clients partent tôt et veulent un <strong>processus « sans contact »</strong> : pas de paperasse, pas d'attente. Une serrure connectée avec code temporaire expirant automatiquement est idéale. Ajoutez un petit mot de remerciement et proposez-leur de réserver directement pour leur prochain déplacement — ils reviendront.</p>
+
+  <h3>Pour les familles et groupes</h3>
+  <p>Prévoyez des consignes <strong>en français et en anglais</strong> (ou avec des pictogrammes). Les familles avec enfants ont souvent plus d'affaires et mettent plus de temps à plier bagage. Accordez 30 minutes supplémentaires si possible. Proposez un espace pour laisser les jeux ou livres pour enfants — ça fidélise.</p>
+
+  <h2>Les erreurs les plus fréquentes (et comment les éviter)</h2>
+
+  <div class="warning-box">
+    <p><strong>Erreur n°1 : le code de la boîte à clés qui ne change pas.</strong> Si le même code sert à tous les voyageurs, n'importe qui peut entrer après le départ. Changez le code à chaque réservation, ou utilisez une serrure connectée qui le fait automatiquement.</p>
+  </div>
+
+  <ul>
+    <li><strong>Consignes trop longues :</strong> Un bloc de 15 lignes non structuré = personne ne le lit. Utilisez des listes à puces, des icônes, et limitez-vous à 5 instructions maximum.</li>
+    <li><strong>Pas de plan B :</strong> Si la boîte à clés tombe en panne de piles (les modèles électroniques durent 6 à 12 mois), le voyageur reste dehors. Vérifiez les piles tous les trimestres.</li>
+    <li><strong>Oublier le tri sélectif :</strong> Saint-Denis applique des consignes strictes de tri. Si les poubelles débordent ou sont mal triées, votre équipe de ménage perd du temps à tout re-trier — et vous risquez une amende en cas de défaut de tri.</li>
+    <li><strong>Pas d'inventaire des équipements après départ :</strong> Un oreiller qui disparaît, une casserole abîmée — sans check-list post-départ, vous ne le saurez qu'au prochain voyageur.</li>
+  </ul>
+
+  <div class="highlight-box">
+    <p><strong>Vous n'avez pas le temps de gérer tout ça ?</strong> L'équipe Hostopia — Conciergerie Saint-Denis s'occupe de l'intégralité du processus : consignes de départ automatisées, coordination ménage, vérification des équipements, et relance des voyageurs pour les avis. Vous recevez une notification quand le logement est prêt pour le prochain client. Contactez-nous pour un devis personnalisé.</p>
+  </div>
+
+</article>
+
+<section class="cta-section grid-bg">
+  <h2 class="reveal">Prêt à simplifier vos départs ?<br><em>On gère le check-out pour vous</em></h2>
+  <p class="reveal d1">Consignes automatiques, boîte à clés, coordination ménage et relance avis — laissez notre équipe s'occuper de chaque départ pendant que vous encaissez. Recevez votre estimation gratuite.</p>
+  <div class="cta-buttons reveal d2">
+    <a href="https://hostopia.fr/simulateur-estimer-mes-revenus" class="btn-bronze" target="_blank" rel="noopener">Lancer le simulateur</a>
+    <a href="https://calendly.com/hostopia-conciergerie/appel-decouverte" class="btn-outline" target="_blank" rel="noopener">Réserver un appel</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Conciergerie <em>Saint-Denis</em></div>
+  <div class="footer-links">
+    <a href="/">Accueil</a><a href="/qui-sommes-nous">Qui sommes-nous</a><a href="/blog">Blog</a>
+    <a href="https://hostopia.fr">Hostopia</a><a href="https://hostopia.fr/mentions-legales">Mentions légales</a>
+  </div>
+  <p class="footer-copy">© 2025 Hostopia — Conciergerie Airbnb Saint-Denis · Grand Paris · Île-de-France</p>
+</footer>
+
+<a href="https://api.whatsapp.com/send/?phone=33767209266" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-label">Discutons sur WhatsApp</span>
+</a>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}}), {threshold:.1});
+  els.forEach(el => io.observe(el));
+  setTimeout(() => document.querySelectorAll('.article-hero .reveal').forEach(el => el.classList.add('visible')), 100);
+</script>
+</body>
+</html>
