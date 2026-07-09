@@ -133,7 +133,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    P26-07-06</lastmod>
+    <loc>https://conciergeriesaintdenis.fr/blog/multi-proprietaire-airbnb-saint-denis-scaler-portefeuille</loc>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -326,6 +327,12 @@
   <url>
     <loc>https://conciergeriesaintdenis.fr/blog/objets-connectes-smart-home-airbnb-saint-denis</loc>
     <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://conciergeriesaintdenis.fr/blog/accueil-voyageurs-internationaux-airbnb-saint-denis</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
