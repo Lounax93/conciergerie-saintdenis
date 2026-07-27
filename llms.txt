@@ -1,0 +1,15 @@
+# Conciergerie Airbnb Saint-Denis — Hostopia
+
+> Conciergerie Airbnb premium à Saint-Denis, à 10 minutes de Paris, près du Stade de France et de la Basilique. Gestion locative courte durée 100% déléguée.
+
+Hostopia gère des locations courte durée (Airbnb / meublés de tourisme) en Île-de-France pour le compte de propriétaires investisseurs : recherche de voyageurs, tarification dynamique, ménage professionnel, accueil et gestion complète, à Saint-Denis et alentours.
+
+## Pages principales
+
+- [Accueil](https://conciergeriesaintdenis.fr/): présentation du service de conciergerie Airbnb à Saint-Denis
+- [Qui sommes-nous](https://conciergeriesaintdenis.fr/qui-sommes-nous): présentation de l'équipe Hostopia
+- [Blog](https://conciergeriesaintdenis.fr/blog): guides pratiques sur la location courte durée à Saint-Denis (réglementation, fiscalité, rentabilité, équipement, saisonnalité)
+
+## Contact
+
+- [Estimer mes revenus Airbnb](https://hostopia.fr/simulateur-estimer-mes-revenus): simulateur de revenus locatifs Hostopia
