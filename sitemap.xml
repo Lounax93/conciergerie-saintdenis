@@ -16,7 +16,13 @@
         <loc>https://conciergeriesaintdenis.fr/blog/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <lastmod>2026-07-27</lastmod>
+        <lastmod>2026-07-28</lastmod>
+    </url>
+    <url>
+        <loc>https://conciergeriesaintdenis.fr/blog/automatisation-gestion-messages-airbnb-saint-denis</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2026-07-28</lastmod>
     </url>
     <url>
         <loc>https://conciergeriesaintdenis.fr/blog/gerer-periodes-creuses-airbnb-saint-denis</loc>
