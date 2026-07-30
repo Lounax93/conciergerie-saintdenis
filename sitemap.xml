@@ -16,7 +16,13 @@
         <loc>https://conciergeriesaintdenis.fr/blog/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <lastmod>2026-07-28</lastmod>
+        <lastmod>2026-07-30</lastmod>
+    </url>
+    <url>
+        <loc>https://conciergeriesaintdenis.fr/blog/erreurs-a-eviter-airbnb-saint-denis-guide-2026</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2026-07-30</lastmod>
     </url>
     <url>
         <loc>https://conciergeriesaintdenis.fr/blog/salons-professionnels-airbnb-saint-denis-parc-expositions-le-bourget</loc>
