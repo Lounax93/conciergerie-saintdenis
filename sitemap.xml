@@ -16,7 +16,13 @@
         <loc>https://conciergeriesaintdenis.fr/blog/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <lastmod>2026-08-07</lastmod>
+        <lastmod>2026-08-09</lastmod>
+    </url>
+    <url>
+        <loc>https://conciergeriesaintdenis.fr/blog/preparer-airbnb-hiver-isolation-chauffage-confort-saint-denis-2026</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2026-08-09</lastmod>
     </url>
     <url>
         <loc>https://conciergeriesaintdenis.fr/blog/avis-5-etoiles-airbnb-saint-denis-guide-2026</loc>
